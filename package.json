@@ -1,6 +1,6 @@
 {
   "name": "starter-project",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -61,8 +61,8 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
     "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",
     "isready": "npm run format && npm run lint && npm run build",
-    "clean-files": "rm -rf ./template/public ./template/src && rm -f ./template/.eslintignore ./template/.eslintrc  ./template/.prettierrc ./template/README.md ./template/README_CRA.md ./template/tsconfig.json",
-    "copy-files": "cp -a ./src/. template/src && cp -a ./public/. template/public && cp .eslintignore .eslintrc .prettierrc tsconfig.json README.md README_CRA.md template/",
+    "clean-files": "rm -rf ./template/public ./template/src ./template/templates && rm -f ./template/.eslintignore ./template/generate-react-cli.json ./template/.eslintrc  ./template/.prettierrc ./template/README.md ./template/README_CRA.md ./template/tsconfig.json",
+    "copy-files": "cp -a ./src/. template/src && cp -a ./public/. template/public && cp -a ./templates/. template/templates && cp .eslintignore .eslintrc .prettierrc tsconfig.json README.md README_CRA.md generate-react-cli.json template/",
     "prepublishOnly": "yarn clean-files && yarn copy-files"
   },
   "eslintConfig": {

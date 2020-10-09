@@ -14,9 +14,9 @@ An opinionated starter [Create React App](https://github.com/facebook/create-rea
   - Folder structure
   - Generate templates
   - ESLint & Prettier
-  - 
+
 Custom Templates, format, and ESlint configurations.
-The original Create React App README available [here](./README_CRA.md)
+The original Create React App README available [here](./README_CRA.md).
 
 ## Usage
 
@@ -34,7 +34,7 @@ yarn create react-app your-project-name --template must-have-libraries
 
 `--template` parameter points to this template, note that `cra-template-` prefix is omitted.
 
-## Motivation
+## What are React Developer must know libraries and why do I need them?
 
 Create-React-App (CRA) is a great starter project for React, you can be up and running quickly. It includes vanilla flavor packages and other opinionated packages. Additionally, it has an option to include templates or you can create your own template.
 
