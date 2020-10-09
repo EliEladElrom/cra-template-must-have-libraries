@@ -52,9 +52,8 @@
       "typings-for-scss-modules-loader": "^1.5.1"
     },
     "scripts": {
-      "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
-      "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",
-      "isready": "npm run format && npm run lint && npm run build",
+      "lint": "eslint --ext .js,.jsx,.ts,.tsx ./",
+      "fix": "eslint --ext .js,.jsx,.ts,.tsx  --fix ./"
     }
   }
 }
