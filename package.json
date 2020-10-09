@@ -1,7 +1,49 @@
 {
-  "name": "starter-project",
+  "name": "cra-must-have-libraries",
   "version": "0.1.1",
-  "private": true,
+  "license": "MIT",
+  "author": "Eli Elad Elrom <elad.ny@gmail.com",
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "template.json",
+  "description": "A starter CRA professional React v17 project with must-have ReactJS libraries including TypeScript, SCSS, Redux, Toolkit, Material-UI, Styled Components, React Router, Jest & Enzym, Folder structure, Generate templates, ESLint, Prettier, Recoil",
+  "keywords": [
+    "react",
+    "reactjs",
+    "create-react-app",
+    "cra-template",
+    "template",
+    "SCSS",
+    "TypeScript",
+    "Redux Toolkit",
+    "Recoil",
+    "enzyme",
+    "redux",
+    "react-redux",
+    "Material-UI",
+    "Enzym",
+    "Styled Components",
+    "react-router",
+    "Folder structure",
+    "Generate templates",
+    "react-router-dom",
+    "ESLint",
+    "prettier"
+  ],
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EliEladElrom/cra-template-must-have-libraries",
+    "directory": "/"
+  },
+  "bugs": {
+    "url": "https://github.com/EliEladElrom/cra-template-must-have-libraries/issues"
+  },
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
