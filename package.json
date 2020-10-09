@@ -1,6 +1,6 @@
 {
   "name": "cra-must-have-libraries",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "author": "Eli Elad Elrom <elad.ny@gmail.com",
   "engines": {
@@ -10,11 +10,12 @@
   "description": "A starter CRA professional React v17 project with must-have ReactJS libraries including TypeScript, SCSS, Redux, Toolkit, Material-UI, Styled Components, React Router, Jest & Enzym, Folder structure, Generate templates, ESLint, Prettier, Recoil",
   "keywords": [
     "react",
-    "reactjs",
     "create-react-app",
     "cra-template",
     "template",
     "SCSS",
+    "reactjs",
+    "react v17",
     "TypeScript",
     "Redux Toolkit",
     "Recoil",
