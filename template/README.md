@@ -34,7 +34,7 @@ yarn create react-app your-project-name --template must-have-libraries
 
 `--template` parameter points to this template, note that `cra-template-` prefix is omitted.
 
-## What are React Developer must know libraries and why do I need them?
+## Motivation
 
 Create-React-App (CRA) is a great starter project for React, you can be up and running quickly. It includes vanilla flavor packages and other opinionated packages. Additionally, it has an option to include templates or you can create your own template.
 
