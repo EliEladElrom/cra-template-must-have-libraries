@@ -30,9 +30,9 @@ Or
 yarn create react-app your-project-name --template must-have-libraries
 ```
 
-`npx` command installs the most recent stable version of CRA from npm.
+`npx` package runner tool installs the most recent stable version of CRA from npm. (npx comes out of the box with npm 5.2+)
 
-`--template` parameter points to this template, note that `cra-template-` prefix is omitted.
+`--template` parameter points to this template, note that `cra-template-` prefix will be omitted.
 
 ## What are React Developer must know libraries and why do I need them?
 
@@ -76,15 +76,19 @@ CRA template only support `scripts` and `dependencies` inside generated `package
 
 ## Testing
 
-Testing is done with [Jest](https://github.com/facebook/jest) &  [Enzyme](https://airbnb.io/enzyme/).
+Testing is supported with [Enzyme](https://airbnb.io/enzyme/) that works with [Jest](https://github.com/facebook/jest).
 
 ## Eslint configurations
 
-Lint is set according to Airbnb — as part of their style guide. Feel free to tweak `.eslintrc`.
+Lint is set according to Airbnb style guide — as part of their style guide. Feel free to tweak `.eslintrc`.
 
 ## Format configurations
 
-[Prettier](https://prettier.io/) is set using my opinionated settings, feel free to [tweak prettier rules](https://prettier.io/docs/en/configuration.html) inside `.prettierrc` file to match your code style.
+[Prettier](https://prettier.io/) is set using my opinionated settings, feel free to [tweak prettier rules](https://prettier.io/docs/en/configuration.html) inside config file `.prettierrc` to match your code style.
+
+## Configure Components Templates
+
+[generate-react-cli](https://github.com/arminbro/generate-react-cli) help speed up productivity in React projects, feel free to tweak rules inside the config file `generate-react-cli.json` to match your needs.
 
 ## Where to go from here?
 
