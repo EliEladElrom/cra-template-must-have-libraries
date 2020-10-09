@@ -14,9 +14,9 @@ An opinionated starter [Create React App](https://github.com/facebook/create-rea
   - Folder structure
   - Generate templates
   - ESLint & Prettier
-  - 
+
 Custom Templates, format, and ESlint configurations.
-The original Create React App README available [here](./README_CRA.md)
+The original Create React App README available [here](./README_CRA.md).
 
 ## Usage
 
