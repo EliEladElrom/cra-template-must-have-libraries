@@ -1,0 +1,11 @@
+place all your object model files here, for example: userObject.ts
+
+export interface userObject {
+  email: string
+  password: string
+}
+
+export const initUser = (): userObject => ({
+  email: '',
+  password: '',
+})
