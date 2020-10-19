@@ -76,6 +76,22 @@ CRA template only support `scripts` and `dependencies` inside generated `package
 
 Unit Testing is supported with [Enzyme](https://airbnb.io/enzyme/) that works with [Jest](https://github.com/facebook/jest).  Additionally, [Sinon](https://github.com/sinonjs/sinon) - a standalone test spies, stubs and mocks that works with Enzyme & Jest.  
 
+The 'src/setupTests.ts' file is already configured to work with enzyme using the enzyme react adapter. 
+
+For snapshot -- update 'package.json';
+
+``ng 
+  "jest": {
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
+  }
+``
+
+Note: remember to update / delete 'src/App.test.tsx' in case you update 'App.tsx'
+
+To run the tests: 
+
+`$ yarn test`
+
 ## Eslint configurations
 
 Lint is set according to Airbnb style guide — as part of their style guide. Feel free to tweak `.eslintrc`.
