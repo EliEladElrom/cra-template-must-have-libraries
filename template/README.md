@@ -3,17 +3,17 @@
 An opinionated starter [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with must-have ReactJS libraries including:
 
   - React v17
-  - TypeScript
-  - TypeScript
-  - Sass/SCSS
-  - Redux Toolkit, Recoil
-  - Material-UI
+  - Type Checker - TypeScript
+  - Preprocessors - Sass/SCSS
+  - State management - Redux Toolkit, Recoil
+  - CSS Framework - Material-UI
   - Styled Components
-  - React Router
-  - Jest & Enzym
+  - Router - React Router
+  - Unit Testing - Jest & Enzym + Sinon
   - Folder structure
   - Generate templates
-  - ESLint & Prettier
+  - Format & Lint - ESLint & Prettier
+  - Useful utilities - Lodash, Moment, Classnames
 
 Custom Templates, format, and ESlint configurations.
 The original Create React App README available [here](./README_CRA.md).
@@ -21,18 +21,18 @@ The original Create React App README available [here](./README_CRA.md).
 ## Usage
 
 ```bash
-npx create-react-app your-project-name --template must-have-libraries
-```
-
-Or
-
-```bash
 yarn create react-app your-project-name --template must-have-libraries
 ```
 
-`npx` command installs the most recent stable version of CRA from npm.
+Or;
 
-`--template` parameter points to this template, note that `cra-template-` prefix is omitted.
+```bash
+npx create-react-app your-project-name --template must-have-libraries
+```
+
+`npx` package runner tool installs the most recent stable version of CRA from npm. (npx comes out of the box with npm 5.2+)
+
+`--template` parameter points to this template, note that `cra-template-` prefix will be omitted.
 
 ## What are React Developer must know libraries and why do I need them?
 
@@ -64,27 +64,29 @@ Inside the project directory run:
 - `yarn test` - launches the test runner in the interactive watch mode.
 
 - `yarn build` - builds the app for production to the `build` folder.
-
 - `yarn eject` - exposes content of `react-script` package
-
 - `yarn lint` - lints project files according to Airbnb — as part of their style guide 👍 — it provides an ESLint configuration that anyone can use and it is the standard.
-
+- `yarn fix` - fix lints issues according to style guide set.
 - `yarn format` - will format your code prettier using opinionated settings inside `.prettierrc` file.
-- `isready` - will check if the code is ready for showtime (production), run lint, format and build.
+- `yarn isready` - will check if the code is ready for showtime (production), run lint, format and build.
 
 CRA template only support `scripts` and `dependencies` inside generated `package.json`. No `devDependencies` is possible on CRA template for now.
 
 ## Testing
 
-Testing is done with [Jest](https://github.com/facebook/jest) &  [Enzyme](https://airbnb.io/enzyme/).
+Testing is supported with [Enzyme](https://airbnb.io/enzyme/) that works with [Jest](https://github.com/facebook/jest).
 
 ## Eslint configurations
 
-Lint is set according to Airbnb — as part of their style guide. Feel free to tweak `.eslintrc`.
+Lint is set according to Airbnb style guide — as part of their style guide. Feel free to tweak `.eslintrc`.
 
 ## Format configurations
 
-[Prettier](https://prettier.io/) is set using my opinionated settings, feel free to [tweak prettier rules](https://prettier.io/docs/en/configuration.html) inside `.prettierrc` file to match your code style.
+[Prettier](https://prettier.io/) is set using my opinionated settings, feel free to [tweak prettier rules](https://prettier.io/docs/en/configuration.html) inside config file `.prettierrc` to match your code style.
+
+## Configure Components Templates
+
+[generate-react-cli](https://github.com/arminbro/generate-react-cli) help speed up productivity in React projects, feel free to tweak rules inside the config file `generate-react-cli.json` to match your needs.
 
 ## Where to go from here?
 

@@ -49,11 +49,16 @@
       "redux": "^4.0.5",
       "scss-loader": "^0.0.1",
       "styled-components": "^5.1.1",
-      "typings-for-scss-modules-loader": "^1.5.1"
+      "typings-for-scss-modules-loader": "^1.5.1",
+      "sinon": "^9.2.0",
+      "lodash": "^4.17.20",
+      "moment": "^2.29.1"
     },
     "scripts": {
       "lint": "eslint --ext .js,.jsx,.ts,.tsx ./",
-      "fix": "eslint --ext .js,.jsx,.ts,.tsx  --fix ./"
+      "fix": "eslint --ext .js,.jsx,.ts,.tsx  --fix ./",
+      "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",
+      "isready": "yarn format && yarn lint && yarn build"
     }
   }
 }
