@@ -74,7 +74,7 @@ CRA template only support `scripts` and `dependencies` inside generated `package
 
 ## Unit Testing
 
-Unit Testing is supported with [Enzyme](https://airbnb.io/enzyme/) that works with [Jest](https://github.com/facebook/jest).  Additionally, Standalone test spies, stubs and mocks for JavaScript that works with Enzyme & Jest [Sinon](https://github.com/sinonjs/sinon).  
+Unit Testing is supported with [Enzyme](https://airbnb.io/enzyme/) that works with [Jest](https://github.com/facebook/jest).  Additionally, [Sinon](https://github.com/sinonjs/sinon) - a standalone test spies, stubs and mocks that works with Enzyme & Jest.  
 
 ## Eslint configurations
 
