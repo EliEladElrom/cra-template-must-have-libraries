@@ -80,13 +80,27 @@ The 'src/setupTests.ts' file is already configured to work with enzyme using the
 
 For snapshot -- update 'package.json';
 
-``ng 
+`` 
   "jest": {
     "snapshotSerializers": ["enzyme-to-json/serializer"]
   }
 ``
 
 Note: remember to update / delete 'src/App.test.tsx' in case you update 'App.tsx'
+
+For instance to check if a component you added
+include in App.tsx;
+
+import { shallow } from "enzyme";
+import Calculator from "./components/SomeComponent/SomeComponent";
+
+test('should render SomeComponent', () => {
+  const wrapper = shallow(<App />);
+  const calculator = wrapper.find(SomeComponent);
+  expect(calculator.exists()).toBe(true);
+})
+
+You can read more about unit testing: [hello-jest-enzyme-ts](https://medium.com/react-courses/unit-testing-react-typescript-app-with-jest-jest-dom-enzyme-11f52487aa18) 
 
 To run the tests: 
 

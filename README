@@ -1,6 +1,5 @@
-Try first:
-$ yarn prepublishOnly
-
-To publish public npm & yarn:
-$ npm login
-$ npm publish
+EE: Publish Checklist:
+1. Try first: $ yarn prepublishOnly
+2. Publish changes into git
+3. ensure logged into npm: npm login
+4. To publish public npm & yarn: $ npm publish
