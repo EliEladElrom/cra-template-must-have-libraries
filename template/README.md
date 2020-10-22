@@ -76,6 +76,12 @@ CRA template only support `scripts` and `dependencies` inside generated `package
 
 Unit Testing is supported with [Enzyme](https://airbnb.io/enzyme/) that works with [Jest](https://github.com/facebook/jest).  Additionally, [Sinon](https://github.com/sinonjs/sinon) - a standalone test spies, stubs and mocks that works with Enzyme & Jest.  
 
+Jest and Sinon serve the same purpose. So why add Sinon? 
+The answer is that there are times that you may find one framework more natural and easier to work for the specific test you need than the other so it wouldn’t hurt to have both.
+
+You can compare the list of APIs on Jest (https://jestjs.io/docs/en/api) and Sinon (https://sinonjs.org/releases/v9.2.0/)
+
+
 The 'src/setupTests.ts' file is already configured to work with enzyme using the enzyme react adapter. 
 
 For snapshot -- update 'package.json';
@@ -104,7 +110,7 @@ You can read more about unit testing: [hello-jest-enzyme-ts](https://medium.com/
 
 To run the tests: 
 
-`$ yarn test`
+`$ yarn test # or npm run test`
 
 ## Eslint configurations
 
