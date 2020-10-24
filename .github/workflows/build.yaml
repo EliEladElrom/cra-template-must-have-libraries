@@ -5,7 +5,19 @@ on:
   - pull_request
 
 jobs:
+  createNpmPackage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm i shelljs
+      - name: Upload template
+        uses: actions/upload-artifact@v1
+        with:
+          name: cra-template-must-have-libraries
+          path: .cra-template-must-have-libraries
+
   createAndTestTemplateCRA:
+    needs: createNpmPackage
     runs-on: ubuntu-latest
     steps:
       - name: Use Node.js 10.x
