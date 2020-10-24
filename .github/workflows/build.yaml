@@ -14,8 +14,8 @@ jobs:
       - name: Upload template
         uses: actions/upload-artifact@v1
         with:
-          name: cra-template-rb
-          path: .cra-template-rb
+          name: cra-template-must-have-libraries
+          path: .cra-template-must-have-libraries
 
   createAndTestCRA:
     needs: createNpmPackage
@@ -28,10 +28,10 @@ jobs:
       - name: Download template
         uses: actions/download-artifact@v1
         with:
-          name: cra-template-rb
-          path: ../cra-template-rb # Put into the upper folder. create-react-app wants the current directory empty
+          name: cra-template-must-have-libraries
+          path: ../cra-template-must-have-libraries # Put into the upper folder. create-react-app wants the current directory empty
       - name: Create CRA from downloaded template
-        run: npx create-react-app --template file:../cra-template-rb .
+        run: npx create-react-app --template file:../cra-template-must-have-libraries .
       - run: npm run build
       - run: npm run test
       - run: npm run lint
