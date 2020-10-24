@@ -12,6 +12,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
+      - name: Settings to fix problem on Ubuntu
+        run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
+      - run: sudo sysctl -p
       - name: Create CRA from downloaded template
         run: npx create-react-app --template cra-template-must-have-libraries .
       - run: npm run build

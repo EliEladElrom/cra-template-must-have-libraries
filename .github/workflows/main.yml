@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x]
+        node-version: [12.x]
 
     steps:
       - uses: actions/checkout@v1
@@ -32,15 +32,3 @@ jobs:
       - name: build
         run: |
           yarn build
-
-      - name: semantic release
-        uses: cycjimmy/semantic-release-action@v2
-        id: semantic
-        with:
-          branch: master
-          extra_plugins: |
-            @semantic-release/git@v9
-            @semantic-release/changelog
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
