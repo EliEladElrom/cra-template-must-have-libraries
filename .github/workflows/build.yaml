@@ -5,32 +5,16 @@ on:
   - pull_request
 
 jobs:
-  createNpmPackage:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - run: npm i shelljs
-      - name: Upload template
-        uses: actions/upload-artifact@v1
-        with:
-          name: cra-template-must-have-libraries
-          path: .cra-template-must-have-libraries
-
   createAndTestTemplateCRA:
-    needs: createNpmPackage
     runs-on: ubuntu-latest
     steps:
-      - name: Use Node.js 10.x
+      - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
-          node-version: 10.x
-      - name: Download template
-        uses: actions/download-artifact@v1
-        with:
-          name: cra-template-must-have-libraries
-          path: ../cra-template-must-have-libraries # download to parent folder
+          node-version: 12.x
+          check-latest: true
       - name: Create CRA from downloaded template
-        run: npx create-react-app --template file:../cra-template-must-have-libraries .
+        run: npx create-react-app --template cra-template-must-have-libraries .
       - run: npm run build
       - run: npm run test
       - run: npm run lint
