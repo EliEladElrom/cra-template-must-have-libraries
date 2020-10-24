@@ -29,7 +29,7 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: cra-template-must-have-libraries
-          path: ../cra-template-must-have-libraries # Put into the upper folder. create-react-app wants the current directory empty
+          path: ../cra-template-must-have-libraries # download to parent folder
       - name: Create CRA from downloaded template
         run: npx create-react-app --template file:../cra-template-must-have-libraries .
       - run: npm run build

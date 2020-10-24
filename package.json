@@ -142,15 +142,6 @@
       "!<rootDir>templates/",
       "!<rootDir>template/"
     ],
-    "coverageThreshold": {
-      "global": {
-        "branches": 90,
-        "functions": 90,
-        "lines": 90,
-        "statements": 90
-      }
-    },
-    "coverageReporters": ["text"],
     "snapshotSerializers": ["enzyme-to-json/serializer"]
   }
 }
