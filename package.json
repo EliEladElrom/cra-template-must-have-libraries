@@ -114,7 +114,7 @@
     "isready": "yarn format && yarn lint && yarn build",
     "clean-files": "rm -rf ./template/public ./template/src ./template/templates && rm -f ./template/gitignore ./template/.eslintignore ./template/generate-react-cli.json ./template/.eslintrc  ./template/.prettierrc ./template/README.md ./template/README_CRA.md ./template/tsconfig.json",
     "copy-files": "cp -a ./src/. template/src && cp -a .gitignore template/gitignore && cp -a ./public/. template/public && cp -a ./templates/. template/templates && cp .eslintignore .eslintrc .prettierrc tsconfig.json README.md README_CRA.md generate-react-cli.json template/",
-    "prepublishOnly": "yarn clean-files && yarn copy-files",
+    "prepublishOnly": "yarn clean-files && yarn copy-files"
   },
   "eslintConfig": {
     "extends": "react-app"
