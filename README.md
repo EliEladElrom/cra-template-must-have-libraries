@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/EliEladElrom/cra-template-must-have-libraries.svg?branch=main)](https://travis-ci.org/EliEladElrom/cra-template-must-have-libraries)
 [![Coverage Status](https://coveralls.io/repos/github/EliEladElrom/cra-template-must-have-libraries/badge.svg?branch=main)](https://coveralls.io/github/EliEladElrom/cra-template-must-have-libraries?branch=main)
+![test](https://github.com/EliEladElrom/cra-template-must-have-libraries/workflows/test/badge.svg)
+![lint](https://github.com/EliEladElrom/cra-template-must-have-libraries/workflows/lint/badge.svg)
+![CI](https://github.com/EliEladElrom/cra-template-must-have-libraries/workflows/CI/badge.svg)
+![build](https://github.com/EliEladElrom/cra-template-must-have-libraries/workflows/build/badge.svg)
 
 An opinionated starter [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with must-have ReactJS libraries including:
 

@@ -5,6 +5,9 @@ yarn-error.log
 yarn.lock
 docs
 
+# Coverage directory used by tools like travis/istanbul
+coverage
+
 # IDE
 .idea
 
