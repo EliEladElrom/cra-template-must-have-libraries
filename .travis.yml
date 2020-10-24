@@ -5,7 +5,17 @@ node_js:
   - 11
   - 10
   - 9
+branches:
+  only:
+    - master
+cache:
+  directories:
+    - node_modules
+before_install:
+  - npm update
+  - sudo apt-get update
 install:
   - npm install
 script:
   - npm run test
+  - npm run test:coverage

@@ -1,5 +1,8 @@
 # A starter CRA professional React 17 project with must-have ReactJS libraries template
 
+[![Build Status](https://travis-ci.org/EliEladElrom/cra-template-must-have-libraries.svg?branch=main)](https://travis-ci.org/EliEladElrom/cra-template-must-have-libraries)
+[![Coverage Status](https://coveralls.io/repos/github/EliEladElrom/cra-template-must-have-libraries/badge.svg?branch=main)](https://coveralls.io/github/EliEladElrom/cra-template-must-have-libraries?branch=main)
+
 An opinionated starter [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with must-have ReactJS libraries including:
 
   - React v17
