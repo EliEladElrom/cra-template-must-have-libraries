@@ -108,7 +108,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "coverage": "react-scripts test --coverage",
+    "coverage": "npm test -- --coverage",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "test:clean": "rimraf ./coverage",
     "eject": "react-scripts eject",
@@ -141,6 +141,16 @@
       "!<rootDir>/node_modules/",
       "!<rootDir>templates/",
       "!<rootDir>template/"
-    ]
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "coverageReporters": ["text"],
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   }
 }
