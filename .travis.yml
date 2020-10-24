@@ -1,10 +1,7 @@
 language: node_js
 sudo: false
 node_js:
-  - 12
-  - 11
-  - 10
-  - 9
+  - "stable"
 branches:
   only:
     - master
@@ -14,8 +11,9 @@ cache:
 before_install:
   - npm update
   - sudo apt-get update
+  - npm install --global http-server
 install:
   - npm install
+  - npm build
 script:
-  - npm run test
-  - npm run test:coverage
+  - npm run coveralls

@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 10.x
       - run: npm i # There is a bug with npm ci -> https://github.com/npm/cli/issues/558
-      - run: npm run test:coverage
+      - run: npm run coverage
       - name: Upload to Coveralls
         uses: coverallsapp/github-action@master
         with:
