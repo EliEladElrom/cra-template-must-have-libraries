@@ -1,0 +1,46 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: install dependencies
+        run: |
+          yarn
+      - name: run lint
+        run: |
+          yarn lint
+      - name: run tests
+        run: |
+          yarn test --watchAll=false --coverage --reporters=default
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1.0.14
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+      - name: build
+        run: |
+          yarn build
+
+      - name: semantic release
+        uses: cycjimmy/semantic-release-action@v2
+        id: semantic
+        with:
+          branch: master
+          extra_plugins: |
+            @semantic-release/git@v9
+            @semantic-release/changelog
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
