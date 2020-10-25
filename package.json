@@ -109,7 +109,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "coverage": "npm test --coverage",
+    "coverage": "npm test -- --coverage",
     "coveralls": "npm test --coverage --testPathIgnorePatterns template/ templates/ src/serviceWorker.ts && cat ./tests/coverage/lcov.info | coveralls",
     "test:clean": "rimraf ./coverage",
     "eject": "react-scripts eject",
