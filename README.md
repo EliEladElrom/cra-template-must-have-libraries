@@ -6,6 +6,8 @@
 ![lint](https://github.com/EliEladElrom/cra-template-must-have-libraries/workflows/lint/badge.svg)
 ![CI](https://github.com/EliEladElrom/cra-template-must-have-libraries/workflows/CI/badge.svg)
 ![build](https://github.com/EliEladElrom/cra-template-must-have-libraries/workflows/build/badge.svg)
+[![npm version](https://badge.fury.io/js/cra-template-must-have-libraries.svg)](https://badge.fury.io/js/cra-template-must-have-libraries)
+
 
 An opinionated starter [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with must-have ReactJS libraries including:
 

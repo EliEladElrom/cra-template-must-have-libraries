@@ -15,6 +15,7 @@ docs
 
 # testing
 /coverage
+.nyc_output
 
 # production
 /build

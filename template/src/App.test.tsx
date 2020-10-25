@@ -1,11 +1,17 @@
 import React from 'react'
-import { render } from '@testing-library/react'
+import { shallow } from 'enzyme'
 import App from './App'
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />)
-  const linkElement = getByText(/Eli Elad Elrom - React Tutorials/i)
-  expect(linkElement).toBeInTheDocument()
+describe('<App />', () => {
+  let component
+
+  beforeEach(() => {
+    component = shallow(<App />)
+  })
+
+  test('It should mount', () => {
+    expect(component.length).toBe(1)
+  })
 })
 
 /*

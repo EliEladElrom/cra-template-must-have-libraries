@@ -1,6 +1,6 @@
 {
   "name": "cra-template-must-have-libraries",
-  "version": "0.1.40",
+  "version": "0.1.41",
   "license": "MIT",
   "author": "Eli Elad Elrom <elad.ny@gmail.com",
   "engines": {
@@ -84,9 +84,11 @@
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.0.8",
     "eslint-webpack-plugin": "^2.1.0",
+    "istanbul-reports": "^3.0.2",
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
     "node-sass": "^4.14.1",
+    "nyc": "^15.1.0",
     "prettier-eslint": "^11.0.0",
     "prettier-eslint-cli": "^5.0.0",
     "prop-types": "^15.7.2",
@@ -108,8 +110,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "coverage": "npm test -- --coverage",
-    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
+    "coverage": "npm test -- --coverage --watchAll=false",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "test:clean": "rimraf ./coverage",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
@@ -138,12 +140,32 @@
     "coveralls": "^3.1.0"
   },
   "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{ts}",
-      "!<rootDir>/node_modules/",
-      "!<rootDir>templates/",
-      "!<rootDir>template/"
+    "coverageReporters": [
+      "json",
+      "text",
+      "html",
+      "lcov"
     ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*/*.d.ts",
+      "!src/**/*/Loadable.{js,jsx,ts,tsx}",
+      "!src/**/*/types.ts",
+      "!src/**/store.ts",
+      "!src/index.tsx",
+      "!src/serviceWorker.ts",
+      "!<rootDir>/node_modules/",
+      "!**/templates/**",
+      "!**/template/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]
