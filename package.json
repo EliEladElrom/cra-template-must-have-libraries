@@ -1,6 +1,6 @@
 {
   "name": "cra-template-must-have-libraries",
-  "version": "0.1.39",
+  "version": "0.1.40",
   "license": "MIT",
   "author": "Eli Elad Elrom <elad.ny@gmail.com",
   "engines": {
@@ -109,8 +109,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "coverage": "npm test -- --coverage",
-    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "coverage": "npm test --coverage",
+    "coveralls": "npm test --coverage --testPathIgnorePatterns template/ templates/ src/serviceWorker.ts && cat ./tests/coverage/lcov.info | coveralls",
     "test:clean": "rimraf ./coverage",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
@@ -138,7 +138,7 @@
   "devDependencies": {},
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.{js,ts,jsx}",
+      "src/**/*.{ts}",
       "!<rootDir>/node_modules/",
       "!<rootDir>templates/",
       "!<rootDir>template/"

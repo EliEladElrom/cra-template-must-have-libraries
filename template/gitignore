@@ -5,14 +5,8 @@ yarn-error.log
 yarn.lock
 docs
 
-# Coverage directory used by tools like travis/istanbul
-coverage
-
 # IDE
 .idea
-
-# dependencies
-/node_modules
 
 # dependencies
 /node_modules
