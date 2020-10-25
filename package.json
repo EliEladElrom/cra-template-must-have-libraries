@@ -112,6 +112,7 @@
     "test": "react-scripts test",
     "coverage": "npm test -- --coverage --watchAll=false",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "coveralls-nyc": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "test:clean": "rimraf ./coverage",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",

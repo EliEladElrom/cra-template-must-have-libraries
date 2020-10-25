@@ -136,10 +136,11 @@ Lint is set according to Airbnb style guide — as part of their style guide. Fe
 ## Where to go from here?
 
 Read this article that breaks down the libraries that were added to this project and why they were added.
-- [View on Medium](https://medium.com/react-courses/setting-up-professional-react-project-with-must-have-reactjs-libraries-2020-9358edf9acb3)
-- [Are you learning React?](https://github.com/EliEladElrom/react-tutorials)
+- [Take the Digital Course & get a 40 pages React book](https://www.udemy.com/course/3558877/)
+- [View the article on Medium](https://medium.com/react-courses/setting-up-professional-react-project-with-must-have-reactjs-libraries-2020-9358edf9acb3)
+- [Learning React?](https://github.com/EliEladElrom/react-tutorials)
 - [Visit my site EliElrom.com](https://elielrom.com)
 
-Happy coding ✌
+Happy ~~Hacking~~ Coding ✌
 
 
