@@ -1,6 +1,7 @@
 EE: Publish Checklist:
-1. Move files: $ yarn prepublishOnly
+Ensure logged into npm: npm login
+
+1. Move files: $ yarn lint && yarn prepublishOnly
 2. Update package.json version number
-3. Publish changes into git
-4. ensure logged into npm: npm login
-5. To publish public npm & yarn: $ npm publish
+3. Publish to git
+4. Publish npm & yarn: $ npm publish
