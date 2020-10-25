@@ -1,4 +1,4 @@
-name: Test & Push To Coverall
+name: test
 on:
   - push
   - pull_request
