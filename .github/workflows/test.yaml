@@ -1,4 +1,4 @@
-name: test
+name: Test & Push To Coverall
 on:
   - push
   - pull_request
@@ -8,13 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 10.x
+      - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
-          node-version: 10.x
+          node-version: 12.x
       - run: npm i # There is a bug with npm ci -> https://github.com/npm/cli/issues/558
       - run: npm run coverage
-      - name: Upload to Coveralls
+      - name: Upload coverage file to Coveralls using lcov.info
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
