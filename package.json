@@ -110,7 +110,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "coverage": "npm test -- --coverage",
-    "coveralls": "npm test --coverage --testPathIgnorePatterns template/ templates/ src/serviceWorker.ts && cat ./coverage/lcov.info | coveralls",
+    "coveralls": "cat lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "test:clean": "rimraf ./coverage",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
