@@ -110,7 +110,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "coverage": "npm test -- --coverage",
-    "coveralls": "cat lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "test:clean": "rimraf ./coverage",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
@@ -134,7 +134,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
+  }
   "devDependencies": {},
   "jest": {
     "collectCoverageFrom": [
