@@ -1,7 +1,7 @@
 EE: Publish Checklist:
 Ensure logged into npm: npm login
 
-1. Move files: $ yarn lint && yarn prepublishOnly
-2. Update package.json version number
-3. Publish to git
-4. Publish npm & yarn: $ npm publish
+1. Update package.json version number
+2. Publish to git
+3. Publish npm & yarn: $ npm publish
+4. Ensure Gihub Actions & all badges shows pass
