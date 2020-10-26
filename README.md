@@ -7,6 +7,7 @@
 ![CI](https://github.com/EliEladElrom/cra-template-must-have-libraries/workflows/CI/badge.svg)
 ![build](https://github.com/EliEladElrom/cra-template-must-have-libraries/workflows/build/badge.svg)
 [![npm version](https://badge.fury.io/js/cra-template-must-have-libraries.svg)](https://badge.fury.io/js/cra-template-must-have-libraries)
+[![GitHub issues](https://img.shields.io/github/issues/EliEladElrom/cra-template-must-have-libraries)](https://github.com/EliEladElrom/cra-template-must-have-libraries/issues)
 
 
 An opinionated starter [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with must-have ReactJS libraries including:
@@ -136,10 +137,12 @@ Lint is set according to Airbnb style guide — as part of their style guide. Fe
 ## Where to go from here?
 
 Take the [Digital Course](https://www.udemy.com/course/3558877/) that breaks down the libraries that were added to this project and why they were added.
-- [Take the Digital Course & get a 40 pages React book](https://www.udemy.com/course/3558877/)
+- [Take the Digital Course & Get 40 Pages React Book](https://www.udemy.com/course/3558877/)
+- [Get Free React 17 Book Chapter](https://elielrom.com/ReactBook)
 - [View the article on Medium](https://medium.com/react-courses/setting-up-professional-react-project-with-must-have-reactjs-libraries-2020-9358edf9acb3)
 - [Learning React?](https://github.com/EliEladElrom/react-tutorials)
-- [Visit my site EliElrom.com](https://elielrom.com)
+
+[![NPM](https://nodei.co/npm-dl/cra-template-must-have-libraries.png?months=1)](https://nodei.co/npm/cra-template-must-have-libraries/)
 
 Happy ~~Hacking~~ Coding ✌
 
