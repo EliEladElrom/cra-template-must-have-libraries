@@ -1,7 +1,7 @@
 // @ts-ignore due to isolatedModules flag - no import so this needed
 describe('<App />', () => {
   beforeAll(async () => {
-    await page.goto(SERVER_URL, {waitUntil: 'domcontentloaded'})
+    await page.goto(SERVER_URL, { waitUntil: 'domcontentloaded' })
   }, JEST_TIMEOUT)
 
   it('should include "edit" text on page', async () => {
@@ -19,8 +19,8 @@ describe('<App />', () => {
   }, JEST_TIMEOUT)
 
   it('should include the React svg correct image', async () => {
-    const images = await page.$$eval('img', anchors => [].map.call(anchors, img => img['src']));
-    expect(images[0]).toMatch(SERVER_URL + '/static/media/logo.5d5d9eef.svg')
+    const images = await page.$$eval('img', anchors => [].map.call(anchors, img => img.src));
+    expect(images[0]).toMatch(`${SERVER_URL  }/static/media/logo.5d5d9eef.svg`)
   }, JEST_TIMEOUT)
 
 })
