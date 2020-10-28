@@ -69,7 +69,7 @@
       "typings-for-scss-modules-loader": "^1.5.1",
       "yarn": "^1.22.10"
     },
-,    "scripts": {
+    "scripts": {
       "lint": "eslint --ext .js,.jsx,.ts,.tsx ./",
       "fix": "eslint --ext .js,.jsx,.ts,.tsx  --fix ./",
       "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",

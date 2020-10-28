@@ -25,7 +25,8 @@
     "jsx": "react"
   },
   "include": [
-    "src"
+    "src",
+    "e2e"
   ]
 }
 

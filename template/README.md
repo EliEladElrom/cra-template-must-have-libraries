@@ -20,6 +20,7 @@ An opinionated starter [Create React App](https://github.com/facebook/create-rea
   - Styled Components
   - Router - React Router
   - Unit Testing - Jest & Enzym + Sinon
+  - E2E Testing - Jest & Puppeteer
   - Folder structure
   - Generate templates
   - Format & Lint - ESLint & Prettier
@@ -50,7 +51,7 @@ Create-React-App (CRA) is a great starter project for React, you can be up and r
 
 CRA already made some decisions for us, for example; build tools: Webpack over Rollup or Parcel. Task Runners npm scripts over gulp. CSS, JS, and Jest as the default, and so on.
 
-After working & reviewing projects and libraries that help get the job done with React, it’s hard to stay natural and not to form an opinion one way or another.
+After working & reviewing projects and libraries that help get the job done with React, it’s hard to stay neutral and not to form an opinion one way or another.
 
 For example, when using the package manager what should you use: yarn or npm. When it comes to CSS preprocessor: Saas/SCSS, PostCSS, Less or Stylus, or maybe others. CSS Frameworks: use the main ones; Bootstrap or MaterialUI or a different one. The list goes on and on.
 
@@ -79,6 +80,10 @@ Inside the project directory run:
 - `yarn fix` - fix lints issues according to style guide set.
 - `yarn format` - will format your code prettier using opinionated settings inside `.prettierrc` file.
 - `yarn isready` - will check if the code is ready for showtime (production), run lint, format and build.
+- `yarn test:e2e` - run e2e integration testing with the help of Jest & Puppeteer.
+- `yarn test:e2e-watch` - same as test:e2e just with a watcher.
+- `yarn test:e2e-alone` - stand-alone e2e integration testing NodeJS script for testing using Puppeteer.
+
 
 CRA template only support `scripts` and `dependencies` inside generated `package.json`. No `devDependencies` is possible on CRA template for now.
 
@@ -107,6 +112,7 @@ Note: remember to update / delete 'src/App.test.tsx' in case you update 'App.tsx
 For instance to check if a component you added
 include in App.tsx;
 
+```
 import { shallow } from "enzyme";
 import Calculator from "./components/SomeComponent/SomeComponent";
 
@@ -115,12 +121,25 @@ test('should render SomeComponent', () => {
   const calculator = wrapper.find(SomeComponent);
   expect(calculator.exists()).toBe(true);
 })
+```
 
 You can read more about unit testing: [hello-jest-enzyme-ts](https://medium.com/react-courses/unit-testing-react-typescript-app-with-jest-jest-dom-enzyme-11f52487aa18) 
 
 To run the tests: 
 
-`$ yarn test # or npm run test`
+`$ yarn test`
+
+## E2E Testing
+
+E2E testing provided by Jest & Puppeteer.  Check the E2E folder for stand-alone and testing app.test.tsx component.  You can read more about it [here](https://medium.com/react-courses/deliver-quality-software-reduce-qa-load-integrate-end-to-end-e2e-testing-on-cra-react-a20486a39ac2?sk=c9610ea9812363b262f141f1c30ae445).
+
+To run the E2E stand-alone and Jest & Puppeteer tests run;
+
+`$ yarn test:e2e`
+
+And;
+
+`$ yarn test:e2e-alone`
 
 ## Eslint configurations
 
