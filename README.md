@@ -9,7 +9,7 @@
 [![npm version](https://badge.fury.io/js/cra-template-must-have-libraries.svg)](https://badge.fury.io/js/cra-template-must-have-libraries)
 [![GitHub issues](https://img.shields.io/github/issues/EliEladElrom/cra-template-must-have-libraries)](https://github.com/EliEladElrom/cra-template-must-have-libraries/issues)
 [![DeepScan grade](https://deepscan.io/api/teams/11491/projects/14393/branches/266604/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=11491&pid=14393&bid=266604)
-[![codecov](https://codecov.io/gh/EliEladElrom/cra-template-must-have-libraries/branch/main/graph/badge.svg?token=6HEUnw0uTD)](undefined)
+[![codecov](https://codecov.io/gh/EliEladElrom/cra-template-must-have-libraries/branch/main/graph/badge.svg?token=6HEUnw0uTD)](undefined) - [Get Badges](https://medium.com/react-courses/set-an-ultimate-react-automated-dev-ci-cycle-with-husky-jest-puppeteer-github-actions-codecov-46b923c4f8e3)
 
 An opinionated starter [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with must-have ReactJS libraries including:
 
@@ -72,9 +72,7 @@ Photo Credit: https://github.com/adam-golab/react-developer-roadmap
 Inside the project directory run:
 
 - `yarn start` - runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
 - `yarn test` - launches the test runner in the interactive watch mode.
-
 - `yarn build` - builds the app for production to the `build` folder.
 - `yarn eject` - exposes content of `react-script` package
 - `yarn lint` - lints project files according to Airbnb — as part of their style guide 👍 — it provides an ESLint configuration that anyone can use and it is the standard.
@@ -84,7 +82,7 @@ Inside the project directory run:
 - `yarn test:e2e` - run e2e integration testing with the help of Jest & Puppeteer.
 - `yarn test:e2e-watch` - same as test:e2e just with a watcher.
 - `yarn test:e2e-alone` - stand-alone e2e integration testing NodeJS script for testing using Puppeteer.
-
+- `yarn coverage` - this test is to create a coverage report at needs extra setting in order to work as expected. 
 
 CRA template only support `scripts` and `dependencies` inside generated `package.json`. No `devDependencies` is possible on CRA template for now.
 
@@ -102,11 +100,12 @@ The 'src/setupTests.ts' file is already configured to work with enzyme using the
 
 For snapshot -- update 'package.json';
 
-`` 
+```
+// package.json
   "jest": {
     "snapshotSerializers": ["enzyme-to-json/serializer"]
   }
-``
+```
 
 Note: remember to update / delete 'src/App.test.tsx' in case you update 'App.tsx'
 
@@ -129,6 +128,45 @@ You can read more about unit testing: [hello-jest-enzyme-ts](https://medium.com/
 To run the tests: 
 
 `$ yarn test`
+
+## Coverage
+
+To set coverage we can use Jest. Jest allow us to create reports in different format and set where we want to collect these reports from (or not collect them from), as well as ensure the coverageThreshold. Take a look at my 'package.json' settings;
+
+To get testing coverage report, you need to include the following settings in your 'package.json' file; 
+
+```
+// package.json
+"jest": {
+  "coverageReporters": [
+    "json",
+    "text",
+    "html",
+    "lcov"
+  ],
+  "collectCoverageFrom": [
+    "src/**/*.{js,jsx,ts,tsx}",
+    "!src/**/*/*.d.ts",
+    "!src/**/*/Loadable.{js,jsx,ts,tsx}",
+    "!src/**/*/types.ts",
+    "!src/**/store.ts",
+    "!src/index.tsx",
+    "!src/serviceWorker.ts",
+    "!<rootDir>/node_modules/",
+    "!**/templates/**",
+    "!**/template/**"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 50,
+      "functions": 50,
+      "lines": 50,
+      "statements": 50
+    }
+  }
+```
+
+In this example, I am enforcing 50% 'coverageThreshold', when I set these it can ensure that I am testing in within my threshold or get an error. That can come handy, because we can set these setting to ensure that every single function, statement, lines and branches get at least 50% or even set it to 100% test coverage.
 
 ## E2E Testing
 
@@ -164,6 +202,6 @@ Take the [Digital Course](https://www.udemy.com/course/3558877/) that breaks dow
 
 [![NPM](https://nodei.co/npm-dl/cra-template-must-have-libraries.png?months=1)](https://nodei.co/npm/cra-template-must-have-libraries/)
 
-Happy ~~Hacking~~ Coding ✌
+If you like this library, don't be shy to star it 🙏 Happy ~~Hacking~~ Coding ✌
 
 

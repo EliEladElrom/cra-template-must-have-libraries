@@ -75,7 +75,6 @@
       "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",
       "isready": "yarn format && yarn lint && yarn build",
       "coverage": "npm test -- --coverage",
-      "coveralls": "cat ./coverage/lcov.info | coveralls",
       "test:clean": "rimraf ./coverage",
       "test:e2e": "jest -c e2e/jest.config.js",
       "test:e2e-alone": "node e2e/puppeteer_standalone.js",
