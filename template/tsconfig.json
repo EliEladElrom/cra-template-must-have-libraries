@@ -27,6 +27,10 @@
   "include": [
     "src",
     "e2e"
+  ],
+  "exclude": [
+    "**/templates/*",
+    "**/node_modules/*"
   ]
 }
 

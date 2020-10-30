@@ -13,21 +13,26 @@
     },
     "page": {
       "customTemplates": {
-        "component": "templates/component/component.js",
-        "style": "templates/component/style.scss",
-        "test": "templates/component/test.js"
+        "component": "templates/page/component.tsx",
+        "style": "templates/page/style.scss",
+        "test": "templates/page/test.tsx"
       },
       "path": "src/pages",
-      "withLazy": true,
+      "withLazy": false,
       "withStory": false,
       "withStyle": true,
       "withTest": true
     },
     "layout": {
+      "customTemplates": {
+        "component": "templates/component/component.tsx",
+        "style": "templates/component/style.scss",
+        "test": "templates/component/test.tsx"
+      },
       "path": "src/layout",
       "withLazy": false,
       "withStory": false,
-      "withStyle": false,
+      "withStyle": true,
       "withTest": true
     }
   }
