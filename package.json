@@ -1,6 +1,6 @@
 {
   "name": "cra-template-must-have-libraries",
-  "version": "0.1.45",
+  "version": "0.1.46",
   "license": "MIT",
   "author": "Eli Elad Elrom <elad.ny@gmail.com",
   "engines": {
@@ -125,6 +125,7 @@
     "test:e2e": "jest -c e2e/jest.config.js",
     "test:e2e-alone": "node e2e/puppeteer_standalone.js",
     "test:e2e-watch": "jest -c e2e/jest.config.js --watch",
+    "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
     "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",

@@ -83,6 +83,7 @@ Inside the project directory run:
 - `yarn test:e2e` - run e2e integration testing with the help of Jest & Puppeteer.
 - `yarn test:e2e-watch` - same as test:e2e just with a watcher.
 - `yarn test:e2e-alone` - stand-alone e2e integration testing NodeJS script for testing using Puppeteer.
+- `test:e2e-watch` - debug your jest tests using the debugger statement, more info [here](https://medium.com/react-courses/six-best-debugging-options-to-crush-your-reacts-bugs-like-a-champion-70b11b6a1a2d).
 - `yarn coverage` - this test is to create a coverage report at needs extra setting in order to work as expected. 
 
 CRA template only support `scripts` and `dependencies` inside generated `package.json`. No `devDependencies` is possible on CRA template for now.
@@ -198,6 +199,10 @@ Lint is set according to Airbnb style guide — as part of their style guide. Fe
 ## Configure Components Templates
 
 [generate-react-cli](https://github.com/arminbro/generate-react-cli) help speed up productivity in React projects, feel free to tweak rules inside the config file `generate-react-cli.json` to match your needs.
+
+## Debugging and Profiling
+
+You can read how to debug and profile the App in this article, see [here](https://medium.com/react-courses/six-best-debugging-options-to-crush-your-reacts-bugs-like-a-champion-70b11b6a1a2d).
 
 ## Where to go from here?
 

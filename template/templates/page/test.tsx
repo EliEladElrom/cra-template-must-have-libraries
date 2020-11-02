@@ -3,8 +3,12 @@ import { shallow } from 'enzyme';
 import TemplateName from './TemplateName';
 
 const routeComponentPropsMock = {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  history: {} as any,
+  history: {
+    location: {
+      pathname: '/TemplateName'
+    }
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } as any,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   location: {} as any,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
