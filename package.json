@@ -1,6 +1,6 @@
 {
   "name": "cra-template-must-have-libraries",
-  "version": "0.1.46",
+  "version": "0.1.48",
   "license": "MIT",
   "author": "Eli Elad Elrom <elad.ny@gmail.com",
   "engines": {
@@ -118,6 +118,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "build:serve": "yarn build && serve -s build && open http://localhost:5000",
     "coverage": "npm test -- --coverage --watchAll=false",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "coveralls-nyc": "nyc npm test && nyc report --reporter=text-lcov | coveralls",

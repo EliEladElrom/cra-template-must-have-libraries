@@ -74,7 +74,8 @@ Inside the project directory run:
 
 - `yarn start` - runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - `yarn test` - launches the test runner in the interactive watch mode.
-- `yarn build` - builds the app for production to the `build` folder.
+- `yarn build` - builds the app for production to the `build` folder. 
+- `yarn build:serve` - run a local static build using the production build using serve library. Install `npm install -g serve`. 
 - `yarn eject` - exposes content of `react-script` package
 - `yarn lint` - lints project files according to Airbnb — as part of their style guide 👍 — it provides an ESLint configuration that anyone can use and it is the standard.
 - `yarn fix` - fix lints issues according to style guide set.
@@ -83,7 +84,7 @@ Inside the project directory run:
 - `yarn test:e2e` - run e2e integration testing with the help of Jest & Puppeteer.
 - `yarn test:e2e-watch` - same as test:e2e just with a watcher.
 - `yarn test:e2e-alone` - stand-alone e2e integration testing NodeJS script for testing using Puppeteer.
-- `test:e2e-watch` - debug your jest tests using the debugger statement, more info [here](https://medium.com/react-courses/six-best-debugging-options-to-crush-your-reacts-bugs-like-a-champion-70b11b6a1a2d).
+- `yarn test:debug` - debug your jest tests using the debugger statement, more info [here](https://medium.com/react-courses/six-best-debugging-options-to-crush-your-reacts-bugs-like-a-champion-70b11b6a1a2d).
 - `yarn coverage` - this test is to create a coverage report at needs extra setting in order to work as expected. 
 
 CRA template only support `scripts` and `dependencies` inside generated `package.json`. No `devDependencies` is possible on CRA template for now.
@@ -202,7 +203,39 @@ Lint is set according to Airbnb style guide — as part of their style guide. Fe
 
 ## Debugging and Profiling
 
-You can read how to debug and profile the App in this article, see [here](https://medium.com/react-courses/six-best-debugging-options-to-crush-your-reacts-bugs-like-a-champion-70b11b6a1a2d).
+There are many options to debug such as using this run script and placing `debugger` statements
+```$ yarn test:debug```. Read how on how to debug the App in [this article](https://medium.com/react-courses/six-best-debugging-options-to-crush-your-reacts-bugs-like-a-champion-70b11b6a1a2d).
+
+For Profiling you can use methods such as Chrome DevTools or the `<Profile>` Component. Here is an example;
+````
+// src/AppRouter.tsx
+
+import { Profiler } from 'react'
+
+const AppRouter: FunctionComponent = () => {
+  return (
+    <Profiler onRender={(id, phase, actualTime, baseTime, startTime, commitTime) => {
+      console.log(`${id}'s ${phase} phase:`);
+      console.log(`Actual time: ${actualTime}`);
+      console.log(`Base time: ${baseTime}`);
+      console.log(`Start time: ${startTime}`);
+      console.log(`Commit time: ${commitTime}`);
+    }}>
+    <Router>
+      <RecoilRoot>
+        <Suspense fallback={<span>Loading...</span>}>
+          <Switch>
+            <Route exact path="/" component={App} />
+          </Switch>
+        </Suspense>
+      </RecoilRoot>
+    </Router>
+    </Profiler>
+  )
+}
+````
+
+Read more about profiling options [here](https://medium.com/react-courses/4-ways-to-profile-your-react-app-75b740e39ab2?sk=9e73055e0f3d99caddb0f4f229f4b160).
 
 ## Where to go from here?
 
