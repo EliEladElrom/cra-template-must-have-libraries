@@ -1,6 +1,6 @@
 {
   "name": "cra-template-must-have-libraries",
-  "version": "0.1.49",
+  "version": "0.1.491",
   "license": "MIT",
   "author": "Eli Elad Elrom <elad.ny@gmail.com",
   "engines": {
@@ -110,7 +110,7 @@
     "sinon": "^9.2.0",
     "styled-components": "^5.1.1",
     "ts-jest": "^26.4.3",
-    "typescript": "^3.9.7",
+    "typescript": "^4.0.5",
     "typings-for-scss-modules-loader": "^1.5.1",
     "yarn": "^1.22.10"
   },
@@ -157,6 +157,7 @@
     ]
   },
   "devDependencies": {
+    "@typescript-eslint/scope-manager": "^4.6.1",
     "coveralls": "^3.1.0",
     "husky": "^4.3.0",
     "react-snap": "^1.23.0"

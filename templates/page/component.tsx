@@ -15,8 +15,8 @@ export default class TemplateName extends React.Component<ITemplateNameProps, IT
     super(props);
     this.state = {
       name: this.props.history.location.pathname.substring(
-          1,
-          this.props.history.location.pathname.length
+        1,
+        this.props.history.location.pathname.length
       ).replace('/', '')
     }
   }
@@ -29,7 +29,8 @@ export default class TemplateName extends React.Component<ITemplateNameProps, IT
     return true // or prevent rendering: false
   }
 
-  static getDerivedStateFromProps: React.GetDerivedStateFromProps<ITemplateNameProps, ITemplateNameState> = (props:ITemplateNameProps, state: ITemplateNameState) => {
+  static getDerivedStateFromProps:
+    React.GetDerivedStateFromProps<ITemplateNameProps, ITemplateNameState> = (props:ITemplateNameProps, state: ITemplateNameState) => {
     // invoked right before calling the render method, both on the initial mount and on subsequent updates
     // return an object to update the state, or null to update nothing.
     return null
@@ -48,9 +49,9 @@ export default class TemplateName extends React.Component<ITemplateNameProps, IT
 
   render() {
     return (
-        <div className="TemplateName">
-          {this.state.name} Component
-        </div>);
+      <div className="TemplateName">
+        {this.state.name} Component
+      </div>)
   }
 }
 

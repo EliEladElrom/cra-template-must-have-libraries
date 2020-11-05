@@ -24,15 +24,16 @@ export default class TemplateName extends React.Component<ITemplateNameProps, IT
   // Read more about component lifecycle in the official docs:
   // https://reactjs.org/docs/react-component.html
 
-  static getDerivedStateFromProps: React.GetDerivedStateFromProps<ITemplateNameProps, ITemplateNameState> = (props:ITemplateNameProps, state: ITemplateNameState) => {
-    // invoked right before calling the render method, both on the initial mount and on subsequent updates
-    // return an object to update the state, or null to update nothing.
-    return null
-  }
-
   public shouldComponentUpdate(nextProps: ITemplateNameProps, nextState: ITemplateNameState) {
     // invoked before rendering when new props or state are being received.
     return true // or prevent rendering: false
+  }
+
+  static getDerivedStateFromProps:
+    React.GetDerivedStateFromProps<ITemplateNameProps, ITemplateNameState> = (props:ITemplateNameProps, state: ITemplateNameState) => {
+    // invoked right before calling the render method, both on the initial mount and on subsequent updates
+    // return an object to update the state, or null to update nothing.
+    return null
   }
 
   public getSnapshotBeforeUpdate(prevProps: ITemplateNameProps, prevState: ITemplateNameState) {
@@ -50,7 +51,7 @@ export default class TemplateName extends React.Component<ITemplateNameProps, IT
     return (
       <div className="TemplateName">
         {this.state.name} Component
-      </div>);
+      </div>)
   }
 }
 
