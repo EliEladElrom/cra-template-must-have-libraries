@@ -53,8 +53,8 @@
       "prettier-eslint-cli": "^5.0.0",
       "prop-types": "^15.7.2",
       "puppeteer": "^5.4.1",
-      "react": "17.0.0-rc.0",
-      "react-dom": "17.0.0-rc.0",
+      "react": "17.0.0",
+      "react-dom": "17.0.0",
       "react-redux": "^7.2.1",
       "react-router-dom": "^5.2.0",
       "react-scripts": "3.4.1",
@@ -80,7 +80,8 @@
       "test:e2e-alone": "node e2e/puppeteer_standalone.js",
       "test:e2e-watch": "jest -c e2e/jest.config.js --watch",
       "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
-      "build:serve": "yarn build && serve -s build && open http://localhost:5000"
+      "build:serve": "yarn build && serve -s build",
+      "build:profile": "yarn build --profile && serve -s build"
     }
   }
 }

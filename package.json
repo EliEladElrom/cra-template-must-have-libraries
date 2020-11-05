@@ -1,6 +1,6 @@
 {
   "name": "cra-template-must-have-libraries",
-  "version": "0.1.48",
+  "version": "0.1.49",
   "license": "MIT",
   "author": "Eli Elad Elrom <elad.ny@gmail.com",
   "engines": {
@@ -98,8 +98,8 @@
     "prettier-eslint-cli": "^5.0.0",
     "prop-types": "^15.7.2",
     "puppeteer": "^5.4.1",
-    "react": "17.0.0-rc.0",
-    "react-dom": "17.0.0-rc.0",
+    "react": "17.0.0",
+    "react-dom": "17.0.0",
     "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
@@ -118,7 +118,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "build:serve": "yarn build && serve -s build && open http://localhost:5000",
+    "build:serve": "yarn build && serve -s build",
+    "build:profile": "yarn build --profile && serve -s build",
     "coverage": "npm test -- --coverage --watchAll=false",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "coveralls-nyc": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
@@ -157,7 +158,8 @@
   },
   "devDependencies": {
     "coveralls": "^3.1.0",
-    "husky": "^4.3.0"
+    "husky": "^4.3.0",
+    "react-snap": "^1.23.0"
   },
   "jest": {
     "coverageReporters": [

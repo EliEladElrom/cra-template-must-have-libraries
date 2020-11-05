@@ -14,7 +14,7 @@
 
 An opinionated starter [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with Must-Have Libraries (MHL) including:
 
-  - React v17-RC
+  - React v17.0.0
   - Type Checker - TypeScript
   - Preprocessors - Sass/SCSS
   - State management - Redux Toolkit, Recoil
@@ -75,7 +75,8 @@ Inside the project directory run:
 - `yarn start` - runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - `yarn test` - launches the test runner in the interactive watch mode.
 - `yarn build` - builds the app for production to the `build` folder. 
-- `yarn build:serve` - run a local static build using the production build using serve library. Install `npm install -g serve`. 
+- `yarn build:serve` - run a local static build using the production build using serve library. Install `npm install -g serve`.
+- `yarn build:profile` - profiling production build. 
 - `yarn eject` - exposes content of `react-script` package
 - `yarn lint` - lints project files according to Airbnb — as part of their style guide 👍 — it provides an ESLint configuration that anyone can use and it is the standard.
 - `yarn fix` - fix lints issues according to style guide set.
@@ -236,6 +237,12 @@ const AppRouter: FunctionComponent = () => {
 ````
 
 Read more about profiling options [here](https://medium.com/react-courses/4-ways-to-profile-your-react-app-75b740e39ab2?sk=9e73055e0f3d99caddb0f4f229f4b160).
+
+## Optimizing
+
+- Almost static pages using pre-render with `react-snap`. See comments in: `src/index.tsx`;
+- Precache - src/index.tsx > `serviceWorker.register()`
+Read more about optimizing in [this article](#TODO_COMING_SOON).
 
 ## Where to go from here?
 
