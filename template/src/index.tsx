@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.scss'
 import AppRouter from './AppRouter'
-import * as serviceWorker from './serviceWorker'
 
 // Single-page application (SPA)
 ReactDOM.render(<AppRouter />, document.getElementById('root'))
@@ -15,17 +14,18 @@ ReactDOM.render(<AppRouter />, document.getElementById('root'))
 
 /*
 import { hydrate, render } from 'react-dom'
+import * as serviceWorker from './serviceWorker'
 
 const rootElement = document.getElementById('root')
-if (rootElement && rootElement.hasChildNodes()) {
+if (rootElement && rootElement!.hasChildNodes()) {
   hydrate(<AppRouter />, rootElement)
+
+  // Precache - set to 'register' once you Pre-render
+  // If you want your app to work offline and load faster, you can change
+  // unregister() to register() below. Note this comes with some pitfalls.
+  // Learn more about service workers: http://bit.ly/CRA-PWA
+  serviceWorker.register()
 } else {
   render(<AppRouter />, rootElement)
 }
 */
-
-// Precache - set to 'register' once you Pre-render
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister()
