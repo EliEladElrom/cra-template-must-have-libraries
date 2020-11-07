@@ -240,9 +240,11 @@ Read more about profiling options [here](https://medium.com/react-courses/4-ways
 
 ## Optimizing
 
-- Almost static pages using pre-render with `react-snap`. See comments in: `src/index.tsx`;
+- Prerender - almost static pages using `react-snap`. See comments in: `src/index.tsx`;
 - Precache - src/index.tsx > `serviceWorker.register()`
-Read more about optimizing in [this article](#TODO_COMING_SOON).
+- Analyzer Bundle - `yarn add -D cra-bundle-analyzer` -> Create the report: `npx cra-bundle-analyzer`
+
+Read more about optimizing in [this article](https://medium.com/react-courses/optimize-react-app-best-optimzing-techniques-i-wish-i-knew-before-i-wrote-my-first-line-of-code-2b4651f45a48).
 
 ## Where to go from here?
 

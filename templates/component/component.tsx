@@ -9,7 +9,7 @@ import React from 'react';
 import './TemplateName.scss';
 import { RouteComponentProps } from 'react-router-dom'
 
-export default class TemplateName extends React.Component<ITemplateNameProps, ITemplateNameState> {
+export default class TemplateName extends React.PureComponent<ITemplateNameProps, ITemplateNameState> {
 
   constructor(props: ITemplateNameProps) {
     super(props);
@@ -21,13 +21,15 @@ export default class TemplateName extends React.Component<ITemplateNameProps, IT
     }
   }
 
+  // If you need 'shouldComponentUpdate' -> Refactor to React.Component
   // Read more about component lifecycle in the official docs:
   // https://reactjs.org/docs/react-component.html
 
-  public shouldComponentUpdate(nextProps: ITemplateNameProps, nextState: ITemplateNameState) {
+  /*
+  public shouldComponentUpdate(nextProps: IMyPageProps, nextState: IMyPageState) {
     // invoked before rendering when new props or state are being received.
     return true // or prevent rendering: false
-  }
+  } */
 
   static getDerivedStateFromProps:
     React.GetDerivedStateFromProps<ITemplateNameProps, ITemplateNameState> = (props:ITemplateNameProps, state: ITemplateNameState) => {
