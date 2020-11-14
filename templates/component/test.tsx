@@ -1,15 +1,15 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import TemplateName from './TemplateName';
+import React from 'react'
+import { shallow } from 'enzyme'
+import TemplateName from './TemplateName'
 
 describe('<TemplateName />', () => {
-    let component;
+  let component
 
-    beforeEach(() => {
-        component = shallow(<TemplateName />);
-    });
+  beforeEach(() => {
+    component = shallow(<TemplateName />)
+  });
 
-    test('It should mount', () => {
-        expect(component.length).toBe(1);
-    });
-});
+  test('It should mount', () => {
+    expect(component.length).toBe(1)
+  })
+})

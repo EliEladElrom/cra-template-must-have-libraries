@@ -10,10 +10,10 @@ describe('<App />', () => {
 
   it('should include href with correct link', async () => {
     const hrefsArray = await page.evaluate(
-        () => Array.from(
-            document.querySelectorAll('a[href]'),
-            a => a.getAttribute('href')
-        )
+      () => Array.from(
+        document.querySelectorAll('a[href]'),
+        a => a.getAttribute('href')
+      )
     )
     expect(hrefsArray[0]).toMatch('https://github.com/EliEladElrom/react-tutorials')
   }, JEST_TIMEOUT)
