@@ -31,8 +31,7 @@ export default class TemplateName extends React.PureComponent<ITemplateNameProps
     return true // or prevent rendering: false
   } */
 
-  static getDerivedStateFromProps:
-    React.GetDerivedStateFromProps<ITemplateNameProps, ITemplateNameState> = (props:ITemplateNameProps, state: ITemplateNameState) => {
+  static getDerivedStateFromProps: React.GetDerivedStateFromProps<ITemplateNameProps, ITemplateNameState> = (props:ITemplateNameProps, state: ITemplateNameState) => {
     // invoked right before calling the render method, both on the initial mount and on subsequent updates
     // return an object to update the state, or null to update nothing.
     return null
