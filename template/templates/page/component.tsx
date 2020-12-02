@@ -2,11 +2,11 @@
 Author: Eli Elad Elrom
 Website: https://EliElrom.com
 License: MIT License
-Component: src/page/TemplateName/TemplateName.tsx
+Component: src/pages/TemplateName/TemplateName.tsx
 */
 
-import React from 'react';
-import './TemplateName.scss';
+import React from 'react'
+import './TemplateName.scss'
 import { RouteComponentProps } from 'react-router-dom'
 
 export default class TemplateName extends React.PureComponent<ITemplateNameProps, ITemplateNameState> {

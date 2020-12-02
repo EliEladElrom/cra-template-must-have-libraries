@@ -1,6 +1,13 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import TemplateName from './TemplateName';
+/*
+Author: Eli Elad Elrom
+Website: https://EliElrom.com
+License: MIT License
+Component: Component: src/pages/TemplateName/TemplateName.test.tsx
+*/
+
+import React from 'react'
+import { shallow } from 'enzyme'
+import TemplateName from './TemplateName'
 
 const routeComponentPropsMock = {
   history: {
