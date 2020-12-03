@@ -34,6 +34,18 @@
       "withStory": false,
       "withStyle": true,
       "withTest": true
+    },
+    "d3": {
+      "customTemplates": {
+        "component": "templates/d3/component.tsx",
+        "style": "templates/component/style.scss",
+        "test": "templates/component/test.tsx"
+      },
+      "path": "src/components",
+      "withStyle": true,
+      "withTest": true,
+      "withStory": false,
+      "withLazy": false
     }
   }
 }

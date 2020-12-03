@@ -1,8 +1,15 @@
-EE: Publish Checklist:
-======================
+EE: Publish & verify checklist:
+==============================
+Publish
 1. Update 'package.json' version number
 2. yarn format && yarn lint && yarn prepublishOnly
 3. git add . && git commit -m ''
 4. git push
 4. npm publish (ensure $npm login)
+
+Verify:
 5. Check Github Actions & badges
+https://github.com/EliEladElrom/cra-template-must-have-libraries/actions
+6. Verify version on npm:
+npm info cra-template-must-have-libraries version
+
