@@ -90,6 +90,19 @@ Inside the project directory run:
 
 CRA template only support `scripts` and `dependencies` inside generated `package.json`. No `devDependencies` is possible on CRA template for now.
 
+## Need bootstrap?
+
+If you need bootstrap. Just add;
+```
+$ yarn add bootstrap
+```
+Uncomment import in index.tsx; 
+```
+import 'bootstrap/dist/css/bootstrap.css';
+```
+
+More here: https://create-react-app.dev/docs/adding-bootstrap
+
 ## Router + State Management
 
 Router via React Router v5.2.0 and is set on 'AppRouter.tsx' and included in 'index.tsx', read [here](https://medium.com/react-courses/how-to-integrate-routing-in-typescript-project-with-react-router-v5-2-0-a6b0ab160a1b).

@@ -58,6 +58,18 @@
       "withTest": true,
       "withStory": false,
       "withLazy": false
+    },
+    "recoil": {
+      "customTemplates": {
+        "component": "templates/recoil/component.tsx",
+        "style": "templates/component/style.scss",
+        "test": "templates/recoil/test.tsx"
+      },
+      "path": "src/components",
+      "withStyle": true,
+      "withTest": true,
+      "withStory": false,
+      "withLazy": false
     }
   }
 }

@@ -1,9 +1,15 @@
-Recoil selectors goes here, example: articlesSelectors.ts
+Recoil selectors goes here, example: articlesSelectors.ts, see here:
+https://medium.com/react-courses/instantly-retrieve-mediums-articles-with-react-recoil-in-three-easy-steps-1298a464dd3c
 
-// src/recoil/selectors/articlesSelectors.ts
+/*
+Author: Eli Elad Elrom
+Website: https://EliElrom.com
+License: MIT License
+File: src/model/articlesSelectors.ts
+*/
 
 import { selector } from 'recoil'
-import axios from 'axios'
+import axios from 'axios' // yarn add axios @types/axios
 
 export const getArticlesFromMediumByUser = selector({
   key: 'getArticlesFromMediumByUser',
@@ -25,3 +31,8 @@ export const getArticlesFromMediumByUser = selector({
     }
   },
 })
+
+On the implementation side, you can retrieve;
+import { useRecoilValue } from 'recoil'
+import { getArticlesFromMediumByUser } from '../../recoil/selectors/articlesSelectors'
+const articles = useRecoilValue(getArticlesFromMediumByUser)

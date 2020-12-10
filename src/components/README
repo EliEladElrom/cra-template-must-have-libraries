@@ -2,3 +2,4 @@ components goes here, you can generate with generate-react-cli, examples;
 $ npx generate-react-cli component UserButton
 $ npx generate-react-cli component Rectangle --type=d3class
 $ npx generate-react-cli component Rectangle --type=d3
+$ npx generate-react-cli component Login --type=recoil

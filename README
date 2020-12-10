@@ -9,7 +9,7 @@ Publish
 
 Verify:
 5. Check Github Actions & badges
-https://github.com/EliEladElrom/cra-template-must-have-libraries/actions
+open https://github.com/EliEladElrom/cra-template-must-have-libraries/actions
 6. Verify version on npm:
 npm info cra-template-must-have-libraries version
 
