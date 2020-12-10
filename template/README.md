@@ -248,7 +248,8 @@ Read more about optimizing in [this article](https://medium.com/react-courses/op
 
 ## Where to go from here?
 
-Take the [Digital Course](https://www.udemy.com/course/3558877/) that breaks down the libraries that were added to this project and why they were added.
+Take the [Digital Course](https://www.udemy.com/course/3558877/) that breaks down the libraries that were added to this project and why they were added. 
+Additionally, check out [React Router and Material-UI Digital Course](https://www.udemy.com/course/master-react-17-learn-react-router-and-material-ui/).
 - [Take the Digital Course & Get 40 Pages React Book](https://www.udemy.com/course/3558877/)
 - [Get Free React 17 Book Chapter](https://elielrom.com/ReactBook)
 - [View the article on Medium](https://medium.com/react-courses/setting-up-professional-react-project-with-must-have-reactjs-libraries-2020-9358edf9acb3)

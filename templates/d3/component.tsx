@@ -5,37 +5,36 @@ License: MIT License
 Component: src/component/TemplateName/TemplateName.tsx
 */
 
-import React, { RefObject } from 'react'
+import React, { useState, useEffect, RefObject } from 'react'
 import './TemplateName.scss'
 import * as d3 from 'd3' // yarn add d3 @types/d3
 
-export default class Component extends React.PureComponent<ITemplateNameProps, ITemplateNameState> {
+const TemplateName = () /* props */ => {
+  const [myState, setMyState] = useState<Boolean>(true)
+  const ref: RefObject<HTMLDivElement> = React.createRef()
 
-  myRef: RefObject<HTMLDivElement>
+  useEffect(() => {
+    draw()
+  })
 
-  constructor(props: ITemplateNameProps) {
-    super(props)
-    this.state = {
-      // TODO
-    }
-    this.myRef = React.createRef()
+  const draw = () => {
+    d3.select(ref.current).append('p').text('Hello World')
+    d3.select('svg')
+      .append('g')
+      .attr('transform', 'translate(250, 0)')
+      .append('rect').attr('width', 500)
+      .attr('height', 500)
+      .attr('fill', 'tomato')
   }
 
-  componentDidMount(){
-    d3.select(this.myRef.current)
-      .append('p')
-      .text('Hello World')
-  }
-
-  render() {
-    return <div className="TemplateName" ref={this.myRef} />
-  }
+  return (
+    <div className="TemplateName" ref={ref}>
+      <svg width="500" height="500">
+        <g transform="translate(0, 0)">
+          <rect width="500" height="500" fill="green" />
+        </g>
+      </svg>
+    </div>
+  )
 }
-
-interface ITemplateNameProps {
-  // TODO
-}
-
-interface ITemplateNameState {
-  // TODO
-}
+export default TemplateName
