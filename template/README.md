@@ -268,8 +268,6 @@ Additionally, check out [React Router and Material-UI Digital Course](https://ww
 - [View the article on Medium](https://medium.com/react-courses/setting-up-professional-react-project-with-must-have-reactjs-libraries-2020-9358edf9acb3)
 - [Learning React?](https://github.com/EliEladElrom/react-tutorials)
 
-[![NPM](https://nodei.co/npm-dl/cra-template-must-have-libraries.png?months=1)](https://nodei.co/npm/cra-template-must-have-libraries/)
-
 If you like this library, don't be shy to star it 🙏 Happy ~~Hacking~~ Coding ✌
 
 
