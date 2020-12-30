@@ -14,3 +14,5 @@ open https://github.com/EliEladElrom/cra-template-must-have-libraries/actions
 6. Verify version on npm:
 npm info cra-template-must-have-libraries version
 
+* Note - github action is pulling one build behind from npm so a failed push needs to be re-pushed.
+
