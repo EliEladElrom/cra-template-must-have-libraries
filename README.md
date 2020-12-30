@@ -12,7 +12,7 @@
 [![DeepScan grade](https://deepscan.io/api/teams/11491/projects/14393/branches/266604/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=11491&pid=14393&bid=266604)
 [![codecov](https://codecov.io/gh/EliEladElrom/cra-template-must-have-libraries/branch/main/graph/badge.svg?token=6HEUnw0uTD)](undefined) - [Get Badges](https://medium.com/react-courses/set-an-ultimate-react-automated-dev-ci-cycle-with-husky-jest-puppeteer-github-actions-codecov-46b923c4f8e3)
 
-An opinionated starter [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with Must-Have Libraries (MHL) including:
+A very opinionated starter [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with Must-Have Libraries (MHL) including:
 
   - React v17.0.0
   - Type Checker - TypeScript

@@ -7,9 +7,9 @@ Component: src/component/TemplateName/TemplateName.tsx
 
 import React, { useEffect } from 'react'
 import './TemplateName.scss'
-import { useRecoilValue } from 'recoil'
+// import { useRecoilValue } from 'recoil'
 
-const TemplateName = () => {
+const TemplateName = () /* or ( props : ITemplateNameProps ) */ => {
   const results: boolean = true // useRecoilValue( getMethod )
   useEffect(() => {
     // TODO
@@ -17,11 +17,20 @@ const TemplateName = () => {
   return (
     <>
       {results ? (
-        <>Loaded</>
+        <div style={{ width: '100%', height: '400px', backgroundColor: 'lightgrey' }}>
+          TemplateName Loaded
+        </div>
       ) : (
         <>Loading</>
       )}
     </>
   )
 }
+
+/*
+interface ITemplateNameProps {
+  // TODO
+}
+*/
+
 export default TemplateName

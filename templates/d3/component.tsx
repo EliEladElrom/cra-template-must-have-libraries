@@ -9,7 +9,7 @@ import React, { useState, useEffect, RefObject } from 'react'
 import './TemplateName.scss'
 import * as d3 from 'd3' // yarn add d3 @types/d3
 
-const TemplateName = () /* props */ => {
+const TemplateName = () /* or ( props : ITemplateNameProps ) */ => {
   const [myState, setMyState] = useState<Boolean>(true)
   const ref: RefObject<HTMLDivElement> = React.createRef()
 
@@ -37,4 +37,11 @@ const TemplateName = () /* props */ => {
     </div>
   )
 }
+
+/*
+interface ITemplateNameProps {
+  // TODO
+}
+*/
+
 export default TemplateName
