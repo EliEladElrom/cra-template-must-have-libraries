@@ -19,7 +19,7 @@ A very opinionated starter [Create React App](https://github.com/facebook/create
   - Preprocessors - Sass/SCSS
   - State management - Redux Toolkit, Recoil
   - CSS Framework - Material-UI
-  - Styled Components
+  - CSS-in-JS Modules — Styled Components
   - Router - React Router
   - Unit Testing - Jest & Enzym + Sinon
   - E2E Testing - Jest & Puppeteer

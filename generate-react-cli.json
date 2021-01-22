@@ -70,6 +70,30 @@
       "withTest": true,
       "withStory": false,
       "withLazy": false
+    },
+    "materialui": {
+      "customTemplates": {
+        "component": "templates/materialui/materialui.tsx",
+        "style": "templates/component/style.scss",
+        "test": "templates/component/test.tsx"
+      },
+      "path": "src/components",
+      "withStyle": true,
+      "withTest": true,
+      "withStory": false,
+      "withLazy": false
+    },
+    "widget": {
+      "customTemplates": {
+        "component": "templates/widget/Widget.tsx",
+        "style": "templates/component/style.scss",
+        "test": "templates/recoil/test.tsx"
+      },
+      "path": "src/Widgets",
+      "withStyle": true,
+      "withTest": true,
+      "withStory": false,
+      "withLazy": false
     }
   }
 }

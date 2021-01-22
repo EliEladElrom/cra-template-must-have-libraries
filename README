@@ -6,7 +6,7 @@ Publish
 3. yarn format && yarn lint && yarn prepublishOnly
 4. git add . && git commit -m ''
 5. git push
-6. npm publish (ensure $npm login on SSH sudo)
+6. npm publish (ensure $npm login - on SSH sudo)
 
 Verify:
 5. Check Github Actions & badges
