@@ -14,7 +14,7 @@
 
 A very opinionated starter [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with Must-Have Libraries (MHL) including:
 
-  - React v17.0.0
+  - React v17.0.1
   - Type Checker - TypeScript
   - Preprocessors - Sass/SCSS
   - State management - Redux Toolkit, Recoil
@@ -28,7 +28,7 @@ A very opinionated starter [Create React App](https://github.com/facebook/create
   - Format & Lint - ESLint & Prettier
   - Useful utilities - Lodash, Moment, Classnames, Serve, React-Snap, React-Helmet
 
-Custom Templates, format, and ESlint configurations.
+Custom Templates, format, and ESLint configurations.
 The original Create React App README available [here](./README_CRA.md).
 
 ## Usage
@@ -205,7 +205,7 @@ And;
 
 ## Eslint configurations
 
-Lint is set according to Airbnb style guide — as part of their style guide. Feel free to tweak `.eslintrc`.
+Lint set according to Airbnb style guide — as part of their style guide. Feel free to tweak `.eslintrc`.
 
 ## Format configurations
 

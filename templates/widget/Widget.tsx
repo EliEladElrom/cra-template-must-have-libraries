@@ -6,7 +6,7 @@ Component: src/widgets/TemplateName/TemplateName.tsx
 */
 
 import React, { useEffect } from 'react'
-import './WebFrameworksRaceBarWidget.scss'
+import './TemplateName.scss'
 // import { useRecoilValue } from 'recoil'
 import Grid from '@material-ui/core/Grid'
 
