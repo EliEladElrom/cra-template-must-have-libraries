@@ -86,7 +86,9 @@
       "test:e2e-watch": "jest -c e2e/jest.config.js --watch",
       "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
       "build:serve": "yarn build && serve -s build",
-      "build:profile": "yarn build --profile && serve -s build"
+      "build:profile": "yarn build --profile && serve -s build",
+      "analyze": "yarn build && source-map-explorer 'build/static/js/*.js'",
+      "analyzer": "yarn build && npx cra-bundle-analyzer"
     }
   }
 }

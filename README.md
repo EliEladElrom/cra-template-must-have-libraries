@@ -259,6 +259,20 @@ Read more about profiling options [here](https://medium.com/react-courses/4-ways
 
 Read more about optimizing in [this article](https://medium.com/react-courses/optimize-react-app-best-optimzing-techniques-i-wish-i-knew-before-i-wrote-my-first-line-of-code-2b4651f45a48).
 
+## Analyzing the Bundle Size
+
+‘bundle-analyzer’ (https://github.com/svengau/cra-bundle-analyzer), it’s more colorful and includes all the bundles in one page instead of calling them one by one with source-map-explorer.
+
+Install (yarn add --dev cra-bundle-analyzer) & you use the run script:
+````
+$ yarn analyzer
+````
+
+Other option is use source-map-explorer (yarn add  --dev source-map-explorer);
+````
+$ yarn analyze
+````
+
 ## Where to go from here?
 
 Take the [Digital Course](https://www.udemy.com/course/3558877/) that breaks down the libraries that were added to this project and why they were added. 
