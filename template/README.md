@@ -26,7 +26,7 @@ A very opinionated starter [Create React App](https://github.com/facebook/create
   - Folder structure
   - Generate templates
   - Format & Lint - ESLint & Prettier
-  - Useful utilities - Lodash, Moment, Classnames, Serve, React-Snap, React-Helmet
+  - Useful utilities - Moment, Classnames, Serve, React-Snap, React-Helmet
 
 Custom Templates, format, and ESLint configurations.
 The original Create React App README available [here](./README_CRA.md).

@@ -1,6 +1,6 @@
 {
   "name": "cra-template-must-have-libraries",
-  "version": "17.0.002",
+  "version": "17.0.003",
   "license": "MIT",
   "author": "Eli Elad Elrom <elad.ny@gmail.com",
   "engines": {
@@ -92,7 +92,6 @@
     "eslint-webpack-plugin": "^2.1.0",
     "istanbul-reports": "^3.0.2",
     "jest-puppeteer": "^4.4.0",
-    "lodash": "^4.17.20",
     "moment": "^2.29.1",
     "node-sass": "^4.14.1",
     "nyc": "^15.1.0",
