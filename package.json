@@ -1,6 +1,6 @@
 {
   "name": "cra-template-must-have-libraries",
-  "version": "17.0.003",
+  "version": "17.0.004",
   "license": "MIT",
   "author": "Eli Elad Elrom <elad.ny@gmail.com",
   "engines": {
@@ -106,6 +106,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-test-renderer": "^16.14.0",
+    "react-uuid": "^1.0.2",
     "recoil": "0.1.2",
     "redux": "^4.0.5",
     "scss-loader": "^0.0.1",

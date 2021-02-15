@@ -26,7 +26,7 @@ A very opinionated starter [Create React App](https://github.com/facebook/create
   - Folder structure
   - Generate templates
   - Format & Lint - ESLint & Prettier
-  - Useful utilities - Moment, Classnames, Serve, React-Snap, React-Helmet
+  - Useful utilities - Moment, Classnames, Serve, react-snap, React-Helmet, Analyzer Bundle, react-uuid.
 
 Custom Templates, format, and ESLint configurations.
 The original Create React App README available [here](./README_CRA.md).
@@ -86,7 +86,9 @@ Inside the project directory run:
 - `yarn test:e2e-watch` - same as test:e2e just with a watcher.
 - `yarn test:e2e-alone` - stand-alone e2e integration testing NodeJS script for testing using Puppeteer.
 - `yarn test:debug` - debug your jest tests using the debugger statement, more info [here](https://medium.com/react-courses/six-best-debugging-options-to-crush-your-reacts-bugs-like-a-champion-70b11b6a1a2d).
-- `yarn coverage` - this test is to create a coverage report at needs extra setting in order to work as expected. 
+- `yarn coverage` - this test is to create a coverage report at needs extra setting in order to work as expected.
+- `analyze` - source-map-explorer to Analyzer Bundle.
+- `analyzer` - uses cra-bundle-analyzer to Analyzer Bundle.
 
 CRA template only support `scripts` and `dependencies` inside generated `package.json`. No `devDependencies` is possible on CRA template for now.
 
@@ -261,17 +263,27 @@ Read more about optimizing in [this article](https://medium.com/react-courses/op
 
 ## Analyzing the Bundle Size
 
-‘bundle-analyzer’ (https://github.com/svengau/cra-bundle-analyzer), it’s more colorful and includes all the bundles in one page instead of calling them one by one with source-map-explorer.
+‘bundle-analyzer’ (https://github.com/svengau/cra-bundle-analyzer), is my prefer bundle analyzer, it's more colorful and includes all the bundles in one page instead of calling them one by one with source-map-explorer.
 
 Install (yarn add --dev cra-bundle-analyzer) & you use the run script:
 ````
 $ yarn analyzer
 ````
 
-Other option is use source-map-explorer (yarn add  --dev source-map-explorer);
+Other option is to use source-map-explorer (yarn add  --dev source-map-explorer);
 ````
 $ yarn analyze
 ````
+
+## Cost
+
+Adding all these libraries from this project comes with a cost of 87 kb out of the gate (54 kb of that for Recoil).  
+
+<b>Important</b> - if you don't use Recoil - remove it:
+
+`$ yarn remove recoil`
+
+React v17 costs are a split between React library itself parsed cost 129.17KB that is broken down to parsed 8.67kb (or 2.4 gzipped) and the React DOM parsed 120.5kb (or 38kb gzipped).
 
 ## Where to go from here?
 
