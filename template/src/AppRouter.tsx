@@ -20,18 +20,41 @@ const AppRouter: FunctionComponent = () => {
 }
 
 /*
-    EE: To replace Recoil state management with Redux Toolkit;
+// TODO EE: To replace Recoil with Redux Toolkit;
 
-    import { Provider } from 'react-redux'
-    import store from './redux/store'
+import { Provider } from 'react-redux'
+import store from './redux/store'
 
+<Router>
+  <Provider store={store}>
+    <Switch>
+      <Route exact path="/" component={App} />
+    </Switch>
+  </Provider>
+</Router>
+
+ */
+
+/*
+
+// TODO: EE: Without Recoil or Redux Toolkit;
+
+// src/AppRouter.tsx
+
+import React, { FunctionComponent } from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import App from './App'
+
+const AppRouter: FunctionComponent = () => {
+  return (
     <Router>
-      <Provider store={store}>
-        <Switch>
-          <Route exact path="/" component={App} />
-        </Switch>
-      </Provider>
+      <Switch>
+        <Route exact path="/" component={App} />
+      </Switch>
     </Router>
+  )
+}
+
  */
 
 export default AppRouter
