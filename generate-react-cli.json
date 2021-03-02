@@ -13,9 +13,9 @@
     },
     "page": {
       "customTemplates": {
-        "component": "templates/page/component.tsx",
-        "style": "templates/page/style.scss",
-        "test": "templates/page/test.tsx"
+        "component": "templates/page/TemplateName.tsx",
+        "style": "templates/page/TemplateName.scss",
+        "test": "templates/page/TemplateName.test.tsx"
       },
       "path": "src/pages",
       "withLazy": false,
@@ -25,9 +25,9 @@
     },
     "layout": {
       "customTemplates": {
-        "component": "templates/component/component.tsx",
-        "style": "templates/component/style.scss",
-        "test": "templates/component/test.tsx"
+        "component": "templates/component/TemplateName.tsx",
+        "style": "templates/component/TemplateName.scss",
+        "test": "templates/component/TemplateName.test.tsx"
       },
       "path": "src/layout",
       "withLazy": false,
@@ -37,9 +37,9 @@
     },
     "d3": {
       "customTemplates": {
-        "component": "templates/d3/component.tsx",
-        "style": "templates/component/style.scss",
-        "test": "templates/component/test.tsx"
+        "component": "templates/d3/TemplateName.tsx",
+        "style": "templates/component/TemplateName.scss",
+        "test": "templates/component/TemplateName.test.tsx"
       },
       "path": "src/components",
       "withStyle": true,
@@ -49,9 +49,9 @@
     },
     "d3class": {
       "customTemplates": {
-        "component": "templates/d3class/component.tsx",
-        "style": "templates/component/style.scss",
-        "test": "templates/component/test.tsx"
+        "component": "templates/d3class/TemplateName.tsx",
+        "style": "templates/component/TemplateName.scss",
+        "test": "templates/component/TemplateName.test.tsx"
       },
       "path": "src/components",
       "withStyle": true,
@@ -61,9 +61,9 @@
     },
     "recoil": {
       "customTemplates": {
-        "component": "templates/recoil/component.tsx",
-        "style": "templates/component/style.scss",
-        "test": "templates/recoil/test.tsx"
+        "component": "templates/recoil/TemplateName.tsx",
+        "style": "templates/component/TemplateName.scss",
+        "test": "templates/recoil/TemplateName.test.tsx"
       },
       "path": "src/components",
       "withStyle": true,
@@ -73,9 +73,9 @@
     },
     "materialui": {
       "customTemplates": {
-        "component": "templates/materialui/materialui.tsx",
-        "style": "templates/component/style.scss",
-        "test": "templates/component/test.tsx"
+        "component": "templates/materialui/TemplateName.tsx",
+        "style": "templates/component/TemplateName.scss",
+        "test": "templates/component/TemplateName.test.tsx"
       },
       "path": "src/components",
       "withStyle": true,
@@ -85,9 +85,9 @@
     },
     "widget": {
       "customTemplates": {
-        "component": "templates/widget/Widget.tsx",
-        "style": "templates/component/style.scss",
-        "test": "templates/recoil/test.tsx"
+        "component": "templates/widget/TemplateName.tsx",
+        "style": "templates/component/TemplateName.scss",
+        "test": "templates/recoil/TemplateName.test.tsx"
       },
       "path": "src/Widgets",
       "withStyle": true,
