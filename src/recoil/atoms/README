@@ -14,3 +14,12 @@ export const userState = atom({
   key: 'UserState',
   default: initUser(),
 })
+
+Implement set & use;
+const setUserState = useSetRecoilState(userState)
+const user = useRecoilValue(userState)
+Or setter & getter at the same time;
+const [user, setUser] = useRecoilState(userState)
+
+You can even use in local state:
+const [user, setUser] = React.useState<userObject>(initUser)

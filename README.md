@@ -21,7 +21,7 @@ A very opinionated starter [Create React App](https://github.com/facebook/create
   - CSS Framework - Material-UI
   - CSS-in-JS Modules — Styled Components
   - Router - React Router
-  - Unit Testing - Jest & Enzym + Sinon
+  - Unit Testing - Jest & Enzyme + Sinon
   - E2E Testing - Jest & Puppeteer
   - Folder structure
   - Generate templates
@@ -287,10 +287,10 @@ React v17 costs are a split between React library itself parsed cost 129.17KB th
 
 ## Where to go from here?
 
-Take the [Digital Course](https://www.udemy.com/course/3558877/) that breaks down the libraries that were added to this project and why they were added. 
-Additionally, check out [React Router and Material-UI Digital Course](https://www.udemy.com/course/master-react-17-learn-react-router-and-material-ui/).
-- [Take the Digital Course & Get 40 Pages React Book](https://www.udemy.com/course/3558877/)
-- [Get Free React 17 Book Chapter](https://elielrom.com/ReactBook)
+- [Need help? I will help you with coding, tutor you in react, javascript, typescript, mongodb, node, d3.](https://www.fiverr.com/elieladelrom/tutor-you-in-react-javascript-typescript-mongodb-node-d3)
+- [Visit my site EliElrom.com](https://elielrom.com)
+- [Take the Digital Course & get a 40 pages React book](https://www.udemy.com/course/3558877/)
+- Check out [React Router and Material-UI Digital Course](https://www.udemy.com/course/master-react-17-learn-react-router-and-material-ui/) & get 35 pages eBook.
 - [View the article on Medium](https://medium.com/react-courses/setting-up-professional-react-project-with-must-have-reactjs-libraries-2020-9358edf9acb3)
 - [Learning React?](https://github.com/EliEladElrom/react-tutorials)
 
