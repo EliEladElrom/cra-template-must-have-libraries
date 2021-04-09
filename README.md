@@ -15,7 +15,7 @@
 A very opinionated starter [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with Must-Have Libraries (MHL) including:
 
   - React v17.0.1
-  - Type Checker - TypeScript
+  - Type Checker - TypeScript ^4.2.3
   - Preprocessors - Sass/SCSS
   - State management - Redux Toolkit, Recoil
   - CSS Framework - Material-UI
