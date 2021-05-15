@@ -5,3 +5,4 @@ $ npx generate-react-cli component Rectangle --type=d3
 $ npx generate-react-cli component Login --type=recoil
 $ npx generate-react-cli component MyButton --type=materialui
 $ npx generate-react-cli component MyWidget --type=widget
+$ npx generate-react-cli component LineChart --type=d3WidgetComponent

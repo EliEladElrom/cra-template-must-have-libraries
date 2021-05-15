@@ -94,6 +94,34 @@
       "withTest": true,
       "withStory": false,
       "withLazy": false
+    },
+    "d3WidgetComponent": {
+      "customTemplates": {
+        "component": "templates/d3widgetcomponent/TemplateName.tsx",
+        "helper": "templates/d3widgetcomponent/TemplateNameHelper.tsx",
+        "style": "templates/component/TemplateName.scss",
+        "test": "templates/component/TemplateName.test.tsx"
+      },
+      "path": "src/components",
+      "withStyle": true,
+      "withTest": true,
+      "withHelper": true,
+      "withStory": false,
+      "withLazy": false
+    },
+    "d3Widget": {
+      "customTemplates": {
+        "component": "templates/d3widget/TemplateName.tsx",
+        "style": "templates/component/TemplateName.scss",
+        "test": "templates/component/TemplateName.test.tsx",
+        "type": "templates/d3widget/types.ts"
+      },
+      "path": "src/widgets",
+      "withStyle": true,
+      "withTest": true,
+      "withType": true,
+      "withStory": false,
+      "withLazy": false
     }
   }
 }
