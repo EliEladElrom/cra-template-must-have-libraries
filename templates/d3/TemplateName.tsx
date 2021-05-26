@@ -3,6 +3,10 @@ Author: Eli Elad Elrom
 Website: https://EliElrom.com
 License: MIT License
 Component: src/component/TemplateName/TemplateName.tsx
+
+Created with;
+$ npx generate-react-cli component TemplateName --type=d3
+
 */
 
 import React, { useState, useEffect, RefObject } from 'react'

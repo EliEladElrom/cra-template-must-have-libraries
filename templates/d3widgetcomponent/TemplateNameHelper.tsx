@@ -4,6 +4,9 @@ Website: https://EliElrom.com
 License: MIT License
 Component: src/component/TemplateNameHelper/TemplateNameHelper.tsx
 
+Created with;
+$ npx generate-react-cli component TemplateName --type=d3WidgetComponent
+
 Implement - pass metric:
 const helper = new TemplateNameHelper(props.propertiesNames)
 
