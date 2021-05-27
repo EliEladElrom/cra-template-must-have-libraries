@@ -283,7 +283,7 @@ Additionally, [I will tutor you in react, javascript, typescript, mongodb, node,
 
 ## Where to go from here?
 
-- [Take the interactive d3 and React Course](https://www.udemy.com/instructor/course/4035148/)
+- [Take the interactive d3 and React Course](https://www.udemy.com/share/104AcSAEMacVxQTH0D/)
 - [Take the Digital Course & get a 40 pages React book](https://www.udemy.com/course/3558877/)
 - [Check out React Router and Material-UI Digital Course](https://www.udemy.com/course/master-react-17-learn-react-router-and-material-ui/) & get 35 pages eBook.
 - [Visit my site EliElrom.com](https://elielrom.com)
