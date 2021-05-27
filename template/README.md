@@ -14,7 +14,7 @@
 
 A very opinionated starter [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with Must-Have Libraries (MHL) including:
 
-  - React v17.0.1
+  - React v17.0.2
   - Type Checker - TypeScript ^4.2.3
   - Preprocessors - Sass/SCSS
   - State management - Redux Toolkit, Recoil
@@ -60,13 +60,6 @@ For example, when using the package manager what should you use: yarn or npm. Wh
 Another challenge I observe is that many libraries are not very easy to migrate to once you start without them so although you may not need them today, it may be worth looking into starting on the right foot.
 
 The idea here is to help you set up CRA with the selection of certain opinionated libraries that will help you get the job done from a small project to a larger enterprise level.
-
-To become a true professional React developer is more than just knowing the React library itself. There are tools, libraries, and others that you are expected to know as React is not a framework. React is a JavaScript library developed by Facebook just to handle the user interface and nothing more.
-
-To help figure out the pieces that will turn react into a full-blown framework, check out the roadmap below;
-
-![Image of Must know lib](https://miro.medium.com/max/700/1*-A9vh80AqLKLIyV4HIA02g.png)
-Photo Credit: https://github.com/adam-golab/react-developer-roadmap
 
 ## Run Scripts
 
@@ -285,15 +278,18 @@ Adding all these libraries from this project comes with a cost of 87 kb out of t
 
 React v17 costs are a split between React library itself parsed cost 129.17KB that is broken down to parsed 8.67kb (or 2.4 gzipped) and the React DOM parsed 120.5kb (or 38kb gzipped).
 
+If you can use help with your React project or have a burning question, or an issue in your project that needs help with, I invite you to hire me as your [Coach](https://elielrom.com). My strategy is 100% results-oriented. If you want to sample how I work 1-on-1, let’s schedule a one-time deep dive [Consultation](https://elielrom.com/CoachingHourly).
+Additionally, [I will tutor you in react, javascript, typescript, mongodb, node, d3.](https://www.fiverr.com/elieladelrom/tutor-you-in-react-javascript-typescript-mongodb-node-d3) 
+
 ## Where to go from here?
 
-- [Need help? I will help you with coding, tutor you in react, javascript, typescript, mongodb, node, d3.](https://www.fiverr.com/elieladelrom/tutor-you-in-react-javascript-typescript-mongodb-node-d3)
-- [Visit my site EliElrom.com](https://elielrom.com)
+- [Take the interactive d3 and React Course](https://www.udemy.com/instructor/course/4035148/)
 - [Take the Digital Course & get a 40 pages React book](https://www.udemy.com/course/3558877/)
-- Check out [React Router and Material-UI Digital Course](https://www.udemy.com/course/master-react-17-learn-react-router-and-material-ui/) & get 35 pages eBook.
+- [Check out React Router and Material-UI Digital Course](https://www.udemy.com/course/master-react-17-learn-react-router-and-material-ui/) & get 35 pages eBook.
+- [Visit my site EliElrom.com](https://elielrom.com)
 - [View the article on Medium](https://medium.com/react-courses/setting-up-professional-react-project-with-must-have-reactjs-libraries-2020-9358edf9acb3)
 - [Learning React?](https://github.com/EliEladElrom/react-tutorials)
 
-If you like this library, don't be shy to star it 🙏 Happy ~~Hacking~~ Coding ✌
+If you like this library, don't be shy to star it 🙏
 
 
