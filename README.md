@@ -283,11 +283,11 @@ Additionally, [I will tutor you in react, javascript, typescript, mongodb, node,
 
 ## Where to go from here?
 
-- [Take the interactive d3 and React Course](https://www.udemy.com/share/104AcSAEMacVxQTH0D/)
-- [Take the Digital Course & get a 40 pages React book](https://www.udemy.com/course/3558877/)
-- [Check out React Router and Material-UI Digital Course](https://www.udemy.com/course/master-react-17-learn-react-router-and-material-ui/) & get 35 pages eBook.
-- [Visit my site EliElrom.com](https://elielrom.com)
+- [Take the interactive d3 and React Course](https://www.udemy.com/course/integrating-d3js-with-react/?referralCode=4C1ADE35AB8633B90205)
+- [Take the Digital Course & get a 40 pages React book](https://www.udemy.com/course/getting-started-react17-with-must-have-libraries/?referralCode=3E6A9B9D8EBB48A913A9)
+- [Check out React Router and Material-UI Digital Course](https://www.udemy.com/course/master-react-17-learn-react-router-and-material-ui/?referralCode=9CB1AF4FA99DA9ADF0F4) & get 35 pages eBook.
 - [View the article on Medium](https://medium.com/react-courses/setting-up-professional-react-project-with-must-have-reactjs-libraries-2020-9358edf9acb3)
+- [Visit my site EliElrom.com](https://elielrom.com)
 - [Learning React?](https://github.com/EliEladElrom/react-tutorials)
 
 If you like this library, don't be shy to star it 🙏
