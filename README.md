@@ -85,6 +85,16 @@ Inside the project directory run:
 
 CRA template only support `scripts` and `dependencies` inside generated `package.json`. No `devDependencies` is possible on CRA template for now.
 
+## Docker
+
+Docker hub: [https://hub.docker.com/repository/docker/elieladelrom/cra-template-must-have-libraries](https://hub.docker.com/repository/docker/elieladelrom/cra-template-must-have-libraries)
+
+Check project running: http://localhost:8080/
+
+````
+$ docker run -p 8080:80 elieladelrom/cra-template-must-have-libraries
+````
+
 ## Need bootstrap?
 
 If you need bootstrap. Just add;
@@ -291,5 +301,3 @@ Additionally, [I will tutor you in react, javascript, typescript, mongodb, node,
 - [Learning React?](https://github.com/EliEladElrom/react-tutorials)
 
 If you like this library, don't be shy to star it 🙏
-
-
