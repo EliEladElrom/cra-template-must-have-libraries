@@ -5,19 +5,17 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { RecoilRoot } from 'recoil'
 import App from './App'
 
-const AppRouter: FunctionComponent = () => {
-  return (
-    <Router>
-      <RecoilRoot>
-        <Suspense fallback={<span>Loading...</span>}>
-          <Switch>
-            <Route exact path="/" component={App} />
-          </Switch>
-        </Suspense>
-      </RecoilRoot>
-    </Router>
-  )
-}
+const AppRouter: FunctionComponent = () => (
+  <Router>
+    <RecoilRoot>
+      <Suspense fallback={<span>Loading...</span>}>
+        <Switch>
+          <Route exact path="/" component={App} />
+        </Switch>
+      </Suspense>
+    </RecoilRoot>
+  </Router>
+)
 
 /*
 // TODO EE: To replace Recoil with Redux Toolkit;
