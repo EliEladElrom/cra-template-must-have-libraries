@@ -21,7 +21,7 @@ describe('<App />', () => {
   it('should include the React svg correct image', async () => {
     // @ts-ignore
     const images = await page.$$eval('img', anchors => [].map.call(anchors, img => img.src));
-    expect(images[0]).toMatch(`${SERVER_URL  }/static/media/logo.5d5d9eef.svg`)
+    expect(images[0]).toMatch(`${SERVER_URL  }/static/media/logo.103b5fa1.svg`)
   }, JEST_TIMEOUT)
 
 })
