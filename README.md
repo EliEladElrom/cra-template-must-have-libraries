@@ -12,23 +12,23 @@
 [![DeepScan grade](https://deepscan.io/api/teams/11491/projects/14393/branches/266604/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=11491&pid=14393&bid=266604)
 [![codecov](https://codecov.io/gh/EliEladElrom/cra-template-must-have-libraries/branch/main/graph/badge.svg?token=6HEUnw0uTD)](undefined) - [Get Badges](https://medium.com/react-courses/set-an-ultimate-react-automated-dev-ci-cycle-with-husky-jest-puppeteer-github-actions-codecov-46b923c4f8e3)
 
-An opinionated starter [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with Must-Have Libraries (MHL) including:
+A very opinionated starter [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with Must-Have Libraries (MHL) including:
 
-  - React v17.0.0
-  - Type Checker - TypeScript
+  - React v17.0.2
+  - Type Checker - TypeScript ^4.2.3
   - Preprocessors - Sass/SCSS
   - State management - Redux Toolkit, Recoil
   - CSS Framework - Material-UI
-  - Styled Components
+  - CSS-in-JS Modules — Styled Components
   - Router - React Router
-  - Unit Testing - Jest & Enzym + Sinon
+  - Unit Testing - Jest & Enzyme + Sinon
   - E2E Testing - Jest & Puppeteer
   - Folder structure
   - Generate templates
   - Format & Lint - ESLint & Prettier
-  - Useful utilities - Lodash, Moment, Classnames, Serve, React-Snap, React-Helmet
+  - Useful utilities - Moment, Classnames, Serve, react-snap, React-Helmet, Analyzer Bundle, react-uuid.
 
-Custom Templates, format, and ESlint configurations.
+Custom Templates, format, and ESLint configurations.
 The original Create React App README available [here](./README_CRA.md).
 
 ## Usage
@@ -61,13 +61,6 @@ Another challenge I observe is that many libraries are not very easy to migrate 
 
 The idea here is to help you set up CRA with the selection of certain opinionated libraries that will help you get the job done from a small project to a larger enterprise level.
 
-To become a true professional React developer is more than just knowing the React library itself. There are tools, libraries, and others that you are expected to know as React is not a framework. React is a JavaScript library developed by Facebook just to handle the user interface and nothing more.
-
-To help figure out the pieces that will turn react into a full-blown framework, check out the roadmap below;
-
-![Image of Must know lib](https://miro.medium.com/max/700/1*-A9vh80AqLKLIyV4HIA02g.png)
-Photo Credit: https://github.com/adam-golab/react-developer-roadmap
-
 ## Run Scripts
 
 Inside the project directory run:
@@ -86,9 +79,21 @@ Inside the project directory run:
 - `yarn test:e2e-watch` - same as test:e2e just with a watcher.
 - `yarn test:e2e-alone` - stand-alone e2e integration testing NodeJS script for testing using Puppeteer.
 - `yarn test:debug` - debug your jest tests using the debugger statement, more info [here](https://medium.com/react-courses/six-best-debugging-options-to-crush-your-reacts-bugs-like-a-champion-70b11b6a1a2d).
-- `yarn coverage` - this test is to create a coverage report at needs extra setting in order to work as expected. 
+- `yarn coverage` - this test is to create a coverage report at needs extra setting in order to work as expected.
+- `analyze` - source-map-explorer to Analyzer Bundle.
+- `analyzer` - uses cra-bundle-analyzer to Analyzer Bundle.
 
 CRA template only support `scripts` and `dependencies` inside generated `package.json`. No `devDependencies` is possible on CRA template for now.
+
+## Docker
+
+Docker hub: [https://hub.docker.com/repository/docker/elieladelrom/cra-template-must-have-libraries](https://hub.docker.com/repository/docker/elieladelrom/cra-template-must-have-libraries)
+
+Check project running: http://localhost:8080/
+
+````
+$ docker run -p 8080:80 elieladelrom/cra-template-must-have-libraries
+````
 
 ## Need bootstrap?
 
@@ -205,7 +210,7 @@ And;
 
 ## Eslint configurations
 
-Lint is set according to Airbnb style guide — as part of their style guide. Feel free to tweak `.eslintrc`.
+Lint set according to Airbnb style guide — as part of their style guide. Feel free to tweak `.eslintrc`.
 
 ## Format configurations
 
@@ -259,17 +264,40 @@ Read more about profiling options [here](https://medium.com/react-courses/4-ways
 
 Read more about optimizing in [this article](https://medium.com/react-courses/optimize-react-app-best-optimzing-techniques-i-wish-i-knew-before-i-wrote-my-first-line-of-code-2b4651f45a48).
 
+## Analyzing the Bundle Size
+
+‘bundle-analyzer’ (https://github.com/svengau/cra-bundle-analyzer), is my prefer bundle analyzer, it's more colorful and includes all the bundles in one page instead of calling them one by one with source-map-explorer.
+
+Install (yarn add --dev cra-bundle-analyzer) & you use the run script:
+````
+$ yarn analyzer
+````
+
+Other option is to use source-map-explorer (yarn add  --dev source-map-explorer);
+````
+$ yarn analyze
+````
+
+## Cost
+
+Adding all these libraries from this project comes with a cost of 87 kb out of the gate (54 kb of that for Recoil).  
+
+<b>Important</b> - if you don't use Recoil - remove it:
+
+`$ yarn remove recoil`
+
+React v17 costs are a split between React library itself parsed cost 129.17KB that is broken down to parsed 8.67kb (or 2.4 gzipped) and the React DOM parsed 120.5kb (or 38kb gzipped).
+
+If you can use help with your React project or have a burning question, or an issue in your project that needs help with, I invite you to hire me as your [Coach](https://elielrom.com). My strategy is 100% results-oriented. If you want to sample how I work 1-on-1, let’s schedule a one-time deep dive [Consultation](https://elielrom.com/CoachingHourly).
+Additionally, [I will tutor you in react, javascript, typescript, mongodb, node, d3.](https://www.fiverr.com/elieladelrom/tutor-you-in-react-javascript-typescript-mongodb-node-d3) 
+
 ## Where to go from here?
 
-Take the [Digital Course](https://www.udemy.com/course/3558877/) that breaks down the libraries that were added to this project and why they were added. 
-Additionally, check out [React Router and Material-UI Digital Course](https://www.udemy.com/course/master-react-17-learn-react-router-and-material-ui/).
-- [Take the Digital Course & Get 40 Pages React Book](https://www.udemy.com/course/3558877/)
-- [Get Free React 17 Book Chapter](https://elielrom.com/ReactBook)
+- [Take the interactive d3 and React Course](https://www.udemy.com/course/integrating-d3js-with-react/?referralCode=4C1ADE35AB8633B90205)
+- [Take the Digital Course & get a 40 pages React book](https://www.udemy.com/course/getting-started-react17-with-must-have-libraries/?referralCode=3E6A9B9D8EBB48A913A9)
+- [Check out React Router and Material-UI Digital Course](https://www.udemy.com/course/master-react-17-learn-react-router-and-material-ui/?referralCode=9CB1AF4FA99DA9ADF0F4) & get 35 pages eBook.
 - [View the article on Medium](https://medium.com/react-courses/setting-up-professional-react-project-with-must-have-reactjs-libraries-2020-9358edf9acb3)
+- [Visit my site EliElrom.com](https://elielrom.com)
 - [Learning React?](https://github.com/EliEladElrom/react-tutorials)
 
-[![NPM](https://nodei.co/npm-dl/cra-template-must-have-libraries.png?months=1)](https://nodei.co/npm/cra-template-must-have-libraries/)
-
-If you like this library, don't be shy to star it 🙏 Happy ~~Hacking~~ Coding ✌
-
-
+If you like this library, don't be shy to star it 🙏

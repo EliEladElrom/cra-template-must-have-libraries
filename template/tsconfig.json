@@ -2,13 +2,14 @@
   "compilerOptions": {
     "target": "es5",
     "lib": [
-      "es6", "dom",
+      "es6",
+      "dom",
       "dom",
       "dom.iterable",
       "esnext"
     ],
     "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "noImplicitThis": true,
     "strictNullChecks": true,
     "allowJs": true,
@@ -22,7 +23,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react-jsx"
   },
   "include": [
     "src",
@@ -33,4 +34,3 @@
     "**/node_modules/*"
   ]
 }
-

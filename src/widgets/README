@@ -1,0 +1,6 @@
+components goes here, you can generate with generate-react-cli, examples;
+$ npx generate-react-cli component MyWidget --type=widget
+
+// d3 Widget & Chart Component
+$ npx generate-react-cli component LineChart --type=d3WidgetComponent
+$ npx generate-react-cli component LineChartWidget --type=d3Widget

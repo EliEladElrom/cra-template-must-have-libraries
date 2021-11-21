@@ -3,6 +3,10 @@ Author: Eli Elad Elrom
 Website: https://EliElrom.com
 License: MIT License
 Component: src/component/TemplateName/TemplateName.test.tsx
+
+Created with;
+$ npx generate-react-cli component TemplateName --type=recoil
+
 */
 
 import React from 'react'

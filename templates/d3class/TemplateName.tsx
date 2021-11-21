@@ -3,13 +3,17 @@ Author: Eli Elad Elrom
 Website: https://EliElrom.com
 License: MIT License
 Component: src/component/TemplateName/TemplateName.tsx
+
+Created with;
+$ npx generate-react-cli component TemplateName --type=d3class
+
 */
 
 import React, { RefObject } from 'react'
 import './TemplateName.scss'
 import * as d3 from 'd3' // yarn add d3 @types/d3
 
-export default class Component extends React.PureComponent<ITemplateNameProps, ITemplateNameState> {
+export default class TemplateName extends React.PureComponent<ITemplateNameProps, ITemplateNameState> {
   ref: RefObject<HTMLDivElement>
 
   constructor(props: ITemplateNameProps) {

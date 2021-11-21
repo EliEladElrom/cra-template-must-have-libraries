@@ -13,9 +13,9 @@
     },
     "page": {
       "customTemplates": {
-        "component": "templates/page/component.tsx",
-        "style": "templates/page/style.scss",
-        "test": "templates/page/test.tsx"
+        "component": "templates/page/TemplateName.tsx",
+        "style": "templates/page/TemplateName.scss",
+        "test": "templates/page/TemplateName.test.tsx"
       },
       "path": "src/pages",
       "withLazy": false,
@@ -25,9 +25,9 @@
     },
     "layout": {
       "customTemplates": {
-        "component": "templates/component/component.tsx",
-        "style": "templates/component/style.scss",
-        "test": "templates/component/test.tsx"
+        "component": "templates/component/TemplateName.tsx",
+        "style": "templates/component/TemplateName.scss",
+        "test": "templates/component/TemplateName.test.tsx"
       },
       "path": "src/layout",
       "withLazy": false,
@@ -37,9 +37,9 @@
     },
     "d3": {
       "customTemplates": {
-        "component": "templates/d3/component.tsx",
-        "style": "templates/component/style.scss",
-        "test": "templates/component/test.tsx"
+        "component": "templates/d3/TemplateName.tsx",
+        "style": "templates/component/TemplateName.scss",
+        "test": "templates/component/TemplateName.test.tsx"
       },
       "path": "src/components",
       "withStyle": true,
@@ -49,9 +49,9 @@
     },
     "d3class": {
       "customTemplates": {
-        "component": "templates/d3class/component.tsx",
-        "style": "templates/component/style.scss",
-        "test": "templates/component/test.tsx"
+        "component": "templates/d3class/TemplateName.tsx",
+        "style": "templates/component/TemplateName.scss",
+        "test": "templates/component/TemplateName.test.tsx"
       },
       "path": "src/components",
       "withStyle": true,
@@ -61,13 +61,65 @@
     },
     "recoil": {
       "customTemplates": {
-        "component": "templates/recoil/component.tsx",
-        "style": "templates/component/style.scss",
-        "test": "templates/recoil/test.tsx"
+        "component": "templates/recoil/TemplateName.tsx",
+        "style": "templates/component/TemplateName.scss",
+        "test": "templates/recoil/TemplateName.test.tsx"
       },
       "path": "src/components",
       "withStyle": true,
       "withTest": true,
+      "withStory": false,
+      "withLazy": false
+    },
+    "materialui": {
+      "customTemplates": {
+        "component": "templates/materialui/TemplateName.tsx",
+        "style": "templates/component/TemplateName.scss",
+        "test": "templates/component/TemplateName.test.tsx"
+      },
+      "path": "src/components",
+      "withStyle": true,
+      "withTest": true,
+      "withStory": false,
+      "withLazy": false
+    },
+    "widget": {
+      "customTemplates": {
+        "component": "templates/widget/TemplateName.tsx",
+        "style": "templates/component/TemplateName.scss",
+        "test": "templates/recoil/TemplateName.test.tsx"
+      },
+      "path": "src/Widgets",
+      "withStyle": true,
+      "withTest": true,
+      "withStory": false,
+      "withLazy": false
+    },
+    "d3WidgetComponent": {
+      "customTemplates": {
+        "component": "templates/d3widgetcomponent/TemplateName.tsx",
+        "helper": "templates/d3widgetcomponent/TemplateNameHelper.tsx",
+        "style": "templates/component/TemplateName.scss",
+        "test": "templates/component/TemplateName.test.tsx"
+      },
+      "path": "src/components",
+      "withStyle": true,
+      "withTest": true,
+      "withHelper": true,
+      "withStory": false,
+      "withLazy": false
+    },
+    "d3Widget": {
+      "customTemplates": {
+        "component": "templates/d3widget/TemplateName.tsx",
+        "style": "templates/component/TemplateName.scss",
+        "test": "templates/component/TemplateName.test.tsx",
+        "type": "templates/d3widget/types.ts"
+      },
+      "path": "src/widgets",
+      "withStyle": true,
+      "withTest": true,
+      "withType": true,
       "withStory": false,
       "withLazy": false
     }
