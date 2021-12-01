@@ -108,7 +108,7 @@
     "react-test-renderer": "16.14.0",
     "react-uuid": "1.0.2",
     "recoil": "0.1.2",
-    "redux": "4.0.5",
+    "redux": "4.1.2",
     "scss-loader": "0.0.1",
     "serve": "11.3.2",
     "sinon": "9.2.0",
