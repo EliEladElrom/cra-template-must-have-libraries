@@ -6,16 +6,16 @@ import { RecoilRoot } from 'recoil'
 import App from './App'
 
 const AppRouter = () => (
-    <Router>
-      <RecoilRoot>
-        <Suspense fallback={<span>Loading...</span>}>
-          <Switch>
-            <Route exact path="/" component={App} />
-          </Switch>
-        </Suspense>
-      </RecoilRoot>
-    </Router>
-  )
+  <Router>
+    <RecoilRoot>
+      <Suspense fallback={<span>Loading...</span>}>
+        <Switch>
+          <Route exact path="/" component={App} />
+        </Switch>
+      </Suspense>
+    </RecoilRoot>
+  </Router>
+)
 
 /*
 // TODO EE: To replace Recoil with Redux Toolkit;

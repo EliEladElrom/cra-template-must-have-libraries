@@ -12,8 +12,8 @@ describe('<App />', () => {
     const hrefsArray = await page.evaluate(
       () => Array.from(
         document.querySelectorAll('a[href]'),
-        a => a.getAttribute('href'),
-      ),
+        a => a.getAttribute('href')
+      )
     )
     await expect(hrefsArray[0]).toMatch('https://github.com/EliEladElrom/react-tutorials')
   }, JEST_TIMEOUT)
