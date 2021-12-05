@@ -21,6 +21,9 @@
         "args": "none"
       }
     ],
+    "@typescript-eslint/no-loss-of-precision": [
+      "off"
+    ],
     "@typescript-eslint/semi": [
       "off"
     ],

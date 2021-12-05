@@ -12,16 +12,16 @@ describe('<App />', () => {
     const hrefsArray = await page.evaluate(
       () => Array.from(
         document.querySelectorAll('a[href]'),
-        a => a.getAttribute('href')
-      )
+        a => a.getAttribute('href'),
+      ),
     )
-    expect(hrefsArray[0]).toMatch('https://github.com/EliEladElrom/react-tutorials')
+    await expect(hrefsArray[0]).toMatch('https://github.com/EliEladElrom/react-tutorials')
   }, JEST_TIMEOUT)
 
   it('should include the React svg correct image', async () => {
     // @ts-ignore
     const images = await page.$$eval('img', anchors => [].map.call(anchors, img => img.src));
-    expect(images[0]).toMatch(`${SERVER_URL  }/static/media/logo.5d5d9eef.svg`)
+    await expect(images[0]).toMatch(`${SERVER_URL}/static/media/logo.5d5d9eef.svg`)
   }, JEST_TIMEOUT)
 
 })
