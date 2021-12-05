@@ -1,13 +1,27 @@
 {
   "name": "cra-template-must-have-libraries",
-  "version": "17.0.019",
+  "title": "A Professional Starter Nextjs with Must-Have Libraries (MHL)",
+  "description": "A starter CRA professional React v17 project with must-have ReactJS libraries including TypeScript, SCSS, Redux, Toolkit, Material-UI, Styled Components, React Router, Jest & Enzym, Folder structure, Generate templates, ESLint, Prettier, Recoil",
+  "version": "17.0.022",
   "license": "MIT",
-  "author": "Eli Elad Elrom <elad.ny@gmail.com",
+  "author": {
+    "name": "Eli Elad Elrom",
+    "email": "elad.ny@gmail.com",
+    "url": "https://elielrom.com"
+  },
+  "homepage": "https://elielrom.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EliEladElrom/cra-template-must-have-libraries",
+    "directory": "/"
+  },
+  "bugs": {
+    "url": "https://github.com/EliEladElrom/cra-template-must-have-libraries/issues"
+  },
   "engines": {
     "node": ">=10"
   },
   "main": "template.json",
-  "description": "A starter CRA professional React v17 project with must-have ReactJS libraries including TypeScript, SCSS, Redux, Toolkit, Material-UI, Styled Components, React Router, Jest & Enzym, Folder structure, Generate templates, ESLint, Prettier, Recoil",
   "keywords": [
     "react",
     "create-react-app",
@@ -36,18 +50,10 @@
     "template",
     "template.json"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/EliEladElrom/cra-template-must-have-libraries",
-    "directory": "/"
-  },
-  "bugs": {
-    "url": "https://github.com/EliEladElrom/cra-template-must-have-libraries/issues"
-  },
   "private": false,
   "dependencies": {
-    "@babel/helper-builder-react-jsx": "7.10.4",
-    "@material-ui/core": "4.11.0",
+    "@babel/helper-builder-react-jsx": "7.16.0",
+    "@material-ui/core": "4.11.4",
     "@material-ui/icons": "4.11.2",
     "@octokit/core": "3.1.4",
     "@octokit/plugin-request-log": "1.0.2",
@@ -55,19 +61,16 @@
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "9.3.2",
     "@testing-library/user-event": "7.1.2",
-    "@types/classnames": "2.3.1",
+    "@types/classnames": "2.2.10",
     "@types/enzyme": "3.10.8",
-    "@types/expect-puppeteer": "4.4.5",
     "@types/jest": "26.0.9",
-    "@types/jest-environment-puppeteer": "4.4.0",
     "@types/node": "14.0.27",
-    "@types/puppeteer": "3.0.2",
-    "@types/react": "17.0.26",
+    "@types/react": "16.9.44",
     "@types/react-dom": "16.9.8",
     "@types/react-helmet": "6.1.0",
     "@types/react-redux": "7.1.9",
     "@types/react-router-dom": "5.1.5",
-    "@types/sinon": "9.0.8",
+    "@types/sinon": "10.0.6",
     "@types/styled-components": "5.1.2",
     "@typescript-eslint/eslint-plugin": "3.8.0",
     "@typescript-eslint/parser": "3.8.0",
@@ -84,31 +87,29 @@
     "eslint-loader": "4.0.2",
     "eslint-plugin-flowtype": "6.1.0",
     "eslint-plugin-import": "2.24.2",
-    "eslint-plugin-jest": "23.20.0",
+    "eslint-plugin-jest": "25.2.2",
     "eslint-plugin-jsx-a11y": "6.3.1",
     "eslint-plugin-prettier": "3.1.4",
-    "eslint-plugin-react": "7.20.5",
+    "eslint-plugin-react": "7.26.1",
     "eslint-plugin-react-hooks": "4.0.8",
     "eslint-webpack-plugin": "2.1.0",
     "istanbul-reports": "3.0.2",
-    "jest-puppeteer": "6.0.0",
     "moment": "2.29.1",
-    "sass": "1.43.4",
+    "node-sass": "4.14.1",
     "nyc": "15.1.0",
     "prettier-eslint": "13.0.0",
     "prettier-eslint-cli": "5.0.0",
     "prop-types": "15.7.2",
-    "puppeteer": "11.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-helmet": "6.1.0",
-    "react-redux": "7.2.1",
+    "react-redux": "7.2.6",
     "react-router-dom": "5.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "3.4.1",
     "react-test-renderer": "16.14.0",
     "react-uuid": "1.0.2",
     "recoil": "0.1.2",
-    "redux": "4.0.5",
+    "redux": "4.1.2",
     "scss-loader": "0.0.1",
     "serve": "11.3.2",
     "sinon": "9.2.0",
@@ -116,7 +117,7 @@
     "ts-jest": "26.4.3",
     "typescript": "4.2.3",
     "typings-for-scss-modules-loader": "1.5.1",
-    "yarn": "1.22.10"
+    "yarn": "1.22.17"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -128,7 +129,7 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "coveralls-nyc": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "test:clean": "rimraf ./coverage",
-    "test:e2e": "jest -c e2e/jest.config.js",
+    "test:e2e": "jest -c e2e/jest.config.js --env=puppeteer",
     "test:e2e-alone": "node e2e/puppeteer_standalone.js",
     "test:e2e-watch": "jest -c e2e/jest.config.js --watch",
     "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
@@ -163,11 +164,16 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/scope-manager": "4.6.1",
     "coveralls": "3.1.0",
     "cra-bundle-analyzer": "0.1.0",
     "husky": "4.3.0",
-    "react-snap": "1.23.0"
+    "jest": "27.4.3",
+    "react-snap": "1.23.0",
+    "@types/expect-puppeteer": "4.4.7",
+    "@types/jest-environment-puppeteer": "4.4.1",
+    "@types/puppeteer": "5.4.4",
+    "jest-puppeteer": "6.0.2",
+    "puppeteer": "12.0.1"
   },
   "jest": {
     "coverageReporters": [
