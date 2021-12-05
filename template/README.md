@@ -31,6 +31,8 @@ A very opinionated starter [Create React App](https://github.com/facebook/create
 Custom Templates, format, and ESLint configurations.
 The original Create React App README available [here](./README_CRA.md).
 
+If you want to generate HTML in the server check [NEXT-MHL](https://github.com/EliEladElrom/next-must-have-libraries)
+
 ## Usage
 
 ```bash
@@ -63,23 +65,23 @@ The idea here is to help you set up CRA with the selection of certain opinionate
 
 ## Run Scripts
 
-Inside the project directory run:
+Inside the project directory run using `npm` or `yarn`:
 
-- `yarn start` - runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-- `yarn test` - launches the test runner in the interactive watch mode.
-- `yarn build` - builds the app for production to the `build` folder. 
-- `yarn build:serve` - run a local static build using the production build using serve library. Install `npm install -g serve`.
-- `yarn build:profile` - profiling production build. 
-- `yarn eject` - exposes content of `react-script` package
-- `yarn lint` - lints project files according to Airbnb — as part of their style guide 👍 — it provides an ESLint configuration that anyone can use and it is the standard.
-- `yarn fix` - fix lints issues according to style guide set.
-- `yarn format` - will format your code prettier using opinionated settings inside `.prettierrc` file.
-- `yarn isready` - will check if the code is ready for showtime (production), run lint, format and build.
-- `yarn test:e2e` - run e2e integration testing with the help of Jest & Puppeteer.
-- `yarn test:e2e-watch` - same as test:e2e just with a watcher.
-- `yarn test:e2e-alone` - stand-alone e2e integration testing NodeJS script for testing using Puppeteer.
-- `yarn test:debug` - debug your jest tests using the debugger statement, more info [here](https://medium.com/react-courses/six-best-debugging-options-to-crush-your-reacts-bugs-like-a-champion-70b11b6a1a2d).
-- `yarn coverage` - this test is to create a coverage report at needs extra setting in order to work as expected.
+- `start` - runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- `test` - launches the test runner in the interactive watch mode.
+- `build` - builds the app for production to the `build` folder. 
+- `build:serve` - run a local static build using the production build using serve library. Install `npm install -g serve`.
+- `build:profile` - profiling production build. 
+- `eject` - exposes content of `react-script` package
+- `lint` - lints project files according to Airbnb — as part of their style guide 👍 — it provides an ESLint configuration that anyone can use and it is the standard.
+- `fix` - fix lints issues according to style guide set.
+- `format` - will format your code prettier using opinionated settings inside `.prettierrc` file.
+- `isready` - will check if the code is ready for showtime (production), run lint, format and build.
+- `test:e2e` - run e2e integration testing with the help of Jest & Puppeteer.
+- `test:e2e-watch` - same as test:e2e just with a watcher.
+- `test:e2e-alone` - stand-alone e2e integration testing NodeJS script for testing using Puppeteer.
+- `test:debug` - debug your jest tests using the debugger statement, more info [here](https://medium.com/react-courses/six-best-debugging-options-to-crush-your-reacts-bugs-like-a-champion-70b11b6a1a2d).
+- `coverage` - this test is to create a coverage report at needs extra setting in order to work as expected.
 - `analyze` - source-map-explorer to Analyzer Bundle.
 - `analyzer` - uses cra-bundle-analyzer to Analyzer Bundle.
 
@@ -116,7 +118,7 @@ The code is set for [Recoil](https://medium.com/react-courses/integrate-recoil-w
 
 ## Unit Testing
 
-Unit Testing is supported with [Enzyme](https://airbnb.io/enzyme/) that works with [Jest](https://github.com/facebook/jest).  Additionally, [Sinon](https://github.com/sinonjs/sinon) - a standalone test spies, stubs and mocks that works with Enzyme & Jest.  
+Unit Testing supported with [Enzyme](https://airbnb.io/enzyme/) that works with [Jest](https://github.com/facebook/jest).  Additionally, [Sinon](https://github.com/sinonjs/sinon) - a standalone test spies, stubs and mocks that works with Enzyme & Jest.  
 
 Jest and Sinon serve the same purpose. So why add Sinon? 
 The answer is that there are times that you may find one framework more natural and easier to work for the specific test you need than the other so it wouldn’t hurt to have both.
@@ -295,7 +297,6 @@ Additionally, [I will tutor you in react, javascript, typescript, mongodb, node,
 
 - [Take the interactive d3 and React Course](https://www.udemy.com/course/integrating-d3js-with-react/?referralCode=4C1ADE35AB8633B90205)
 - [Take the Digital Course & get a 40 pages React book](https://www.udemy.com/course/getting-started-react17-with-must-have-libraries/?referralCode=3E6A9B9D8EBB48A913A9)
-- [Check out React Router and Material-UI Digital Course](https://www.udemy.com/course/master-react-17-learn-react-router-and-material-ui/?referralCode=9CB1AF4FA99DA9ADF0F4) & get 35 pages eBook.
 - [View the article on Medium](https://medium.com/react-courses/setting-up-professional-react-project-with-must-have-reactjs-libraries-2020-9358edf9acb3)
 - [Visit my site EliElrom.com](https://elielrom.com)
 - [Learning React?](https://github.com/EliEladElrom/react-tutorials)

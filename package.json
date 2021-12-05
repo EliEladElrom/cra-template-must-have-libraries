@@ -1,13 +1,26 @@
 {
   "name": "cra-template-must-have-libraries",
-  "version": "17.0.021",
+  "title": "A Professional Starter Nextjs with Must-Have Libraries (MHL)",
+  "description": "A starter CRA professional React v17 project with must-have ReactJS libraries including TypeScript, SCSS, Redux, Toolkit, Material-UI, Styled Components, React Router, Jest & Enzym, Folder structure, Generate templates, ESLint, Prettier, Recoil",
+  "version": "17.0.022",
   "license": "MIT",
-  "author": "Eli Elad Elrom <elad.ny@gmail.com",
+  "author": {
+    "name": "Eli Elad Elrom",
+    "email": "elad.ny@gmail.com",
+    "url": "https://elielrom.com"
+  },
+  "homepage": "https://elielrom.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EliEladElrom/cra-template-must-have-libraries"
+  },
+  "bugs": {
+    "url": "https://github.com/EliEladElrom/cra-template-must-have-libraries/issues"
+  },
   "engines": {
     "node": ">=10"
   },
   "main": "template.json",
-  "description": "A starter CRA professional React v17 project with must-have ReactJS libraries including TypeScript, SCSS, Redux, Toolkit, Material-UI, Styled Components, React Router, Jest & Enzym, Folder structure, Generate templates, ESLint, Prettier, Recoil",
   "keywords": [
     "react",
     "create-react-app",
@@ -46,7 +59,7 @@
   },
   "private": false,
   "dependencies": {
-    "@babel/helper-builder-react-jsx": "7.10.4",
+    "@babel/helper-builder-react-jsx": "7.16.4",
     "@material-ui/core": "4.11.0",
     "@material-ui/icons": "4.9.1",
     "@octokit/core": "3.1.4",
@@ -80,13 +93,13 @@
     "eslint-config-airbnb-typescript": "9.0.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-config-react-app": "5.2.1",
-    "eslint-import-resolver-typescript": "2.2.0",
+    "eslint-import-resolver-typescript": "2.5.0",
     "eslint-loader": "4.0.2",
     "eslint-plugin-flowtype": "5.2.0",
     "eslint-plugin-import": "2.22.0",
     "eslint-plugin-jest": "25.2.2",
     "eslint-plugin-jsx-a11y": "6.3.1",
-    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.26.1",
     "eslint-plugin-react-hooks": "4.0.8",
     "eslint-webpack-plugin": "2.1.0",
@@ -108,7 +121,7 @@
     "react-test-renderer": "16.14.0",
     "react-uuid": "1.0.2",
     "recoil": "0.1.2",
-    "redux": "4.0.5",
+    "redux": "4.1.2",
     "scss-loader": "0.0.1",
     "serve": "11.3.2",
     "sinon": "9.2.0",
@@ -116,7 +129,7 @@
     "ts-jest": "26.4.3",
     "typescript": "4.2.3",
     "typings-for-scss-modules-loader": "1.5.1",
-    "yarn": "1.22.10"
+    "yarn": "1.22.17"
   },
   "scripts": {
     "start": "react-scripts start",
