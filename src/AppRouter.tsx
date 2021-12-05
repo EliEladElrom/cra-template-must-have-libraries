@@ -1,11 +1,11 @@
 // src/AppRouter.tsx
 
-import React, { FunctionComponent, Suspense } from 'react'
+import React, { Suspense } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { RecoilRoot } from 'recoil'
 import App from './App'
 
-const AppRouter: FunctionComponent = () => {
+const AppRouter = () => {
   return (
     <Router>
       <RecoilRoot>
