@@ -75,7 +75,7 @@
     "@types/react-router-dom": "5.1.5",
     "@types/sinon": "10.0.6",
     "@types/styled-components": "5.1.2",
-    "@typescript-eslint/eslint-plugin": "5.5.0",
+    "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "5.5.0",
     "@wojtekmaj/enzyme-adapter-react-17": "0.6.3",
     "add": "2.0.6",
