@@ -5,8 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { RecoilRoot } from 'recoil'
 import App from './App'
 
-const AppRouter = () => {
-  return (
+const AppRouter = () => (
     <Router>
       <RecoilRoot>
         <Suspense fallback={<span>Loading...</span>}>
@@ -17,7 +16,6 @@ const AppRouter = () => {
       </RecoilRoot>
     </Router>
   )
-}
 
 /*
 // TODO EE: To replace Recoil with Redux Toolkit;
