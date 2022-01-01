@@ -173,7 +173,7 @@
     "@types/jest-environment-puppeteer": "4.4.1",
     "@types/puppeteer": "5.4.4",
     "jest-puppeteer": "6.0.2",
-    "puppeteer": "12.0.1"
+    "puppeteer": "13.0.1"
   },
   "jest": {
     "coverageReporters": [
