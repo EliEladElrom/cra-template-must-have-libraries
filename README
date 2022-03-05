@@ -3,7 +3,7 @@ EE: Publish & verify checklist:
 Publish
 1. template.json match package.json as possible
 2. Update 'package.json' version number
-3. yarn format && yarn lint && yarn prepublishOnly
+3. yarn format && yarn lint && yarn prepublishOnly && yarn test
 4. git add . && git commit -m ''
 5. git push
 6. npm publish (ensure $npm adduser $npm login - on SSH sudo)
