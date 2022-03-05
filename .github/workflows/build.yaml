@@ -16,6 +16,6 @@ jobs:
         run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
       - run: sudo sysctl -p
       - name: Create CRA from downloaded template
-        run: yarn create react-app your-project-name --template must-have-libraries
+        run: npx create-react-app myapp --template cra-template-must-have-libraries .
       - name: No need to fail due to warnings using CI=false
         run: CI= npm run build
