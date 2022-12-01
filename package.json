@@ -171,7 +171,7 @@
     "jest": "27.4.3",
     "react-snap": "1.23.0",
     "@types/expect-puppeteer": "4.4.7",
-    "@types/jest-environment-puppeteer": "4.4.1",
+    "@types/jest-environment-puppeteer": "5.0.3",
     "@types/puppeteer": "5.4.4",
     "jest-puppeteer": "6.0.2",
     "puppeteer": "12.0.1"
